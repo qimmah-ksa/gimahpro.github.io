@@ -287,6 +287,36 @@ footer {
         margin-bottom: 25px;
     }
 }
+/* إصلاح لون الروابط في الهيدر */
+header nav a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* إصلاح المسافات بين الروابط */
+header nav {
+    display: flex;
+    gap: 25px !important;
+}
+
+/* إصلاح تأثير hover */
+header nav a:hover {
+    color: #f0f0f0 !important;
+}
+header nav a.contact-btn {
+    background-color: #d4af37;
+    color: #0a1a2a !important;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+
+header nav a.contact-btn:hover {
+    background-color: #ffdf85;
+    color: #000 !important;
+}
 /* ================================
    الأنيميشن
 ================================ */
@@ -295,6 +325,7 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 
 }
+
 
 
 
