@@ -317,6 +317,11 @@ header nav a.contact-btn:hover {
     background-color: #ffdf85;
     color: #000 !important;
 }
+#services ul {
+    list-style: disc;
+    padding-right: 20px;
+    line-height: 1.8;
+}
 /* ================================
    الأنيميشن
 ================================ */
@@ -325,6 +330,7 @@ header nav a.contact-btn:hover {
     to { opacity: 1; transform: translateY(0); }
 
 }
+
 
 
 
