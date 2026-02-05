@@ -287,6 +287,46 @@ header nav a {
     text-decoration: none;
     font-weight: 600;
 }
+footer {
+    background-color: #0a1a2a;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-section a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+    color: #d1d1d1;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff33;
+    font-size: 14px;
+}
 /* ================================
    الأنيميشن
 ================================ */
@@ -295,4 +335,5 @@ header nav a {
     to { opacity: 1; transform: translateY(0); }
 
 }
+
 
