@@ -301,7 +301,62 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header {
+    background-color: var(--dark-blue);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--gold);
+}
 
+/* الشعار + النص */
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--gold);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-logo {
+    height: 45px;
+}
+
+/* روابط القائمة */
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* زر تواصل معنا */
+.contact-btn {
+    padding: 8px 18px;
+    background: var(--gold);
+    color: var(--dark-blue);
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.contact-btn:hover {
+    background: #b8932f;
+}
 /* ================================
    الأنيميشن
 ================================ */
@@ -315,3 +370,4 @@ header {
         transform: translateY(0);
     }
 }
+
