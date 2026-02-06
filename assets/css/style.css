@@ -334,6 +334,26 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
 }
+/* ضبط شبكة الفوتر */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    align-items: start;
+}
+
+/* ضبط كل عمود */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* تحسين شكل الروابط داخل الفوتر */
+.site-footer a {
+    display: block;
+    margin-bottom: 6px;
+}
 /* ================================
    الأنيميشن
 ================================ */
@@ -347,6 +367,7 @@ nav a:hover {
         transform: translateY(0);
     }
 }
+
 
 
 
