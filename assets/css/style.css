@@ -303,52 +303,7 @@ nav a {
 nav a:hover {
     color: var(--gold);
 }
-/* تنسيق روابط الفوتر */
-.site-footer a {
-    color: var(--gold);
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    transition: 0.2s;
-}
 
-.site-footer a:hover {
-    color: #ffffff;
-}
-
-/* ضبط الأعمدة داخل الفوتر */
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* ضبط المسافات داخل الفوتر */
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-}
-/* ضبط شبكة الفوتر */
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
-    align-items: start;
-}
-
-/* ضبط كل عمود */
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* تحسين شكل الروابط داخل الفوتر */
-.site-footer a {
-    display: block;
-    margin-bottom: 6px;
-}
 /* ================================
    الأنيميشن
 ================================ */
@@ -362,6 +317,7 @@ nav a:hover {
         transform: translateY(0);
     }
 }
+
 
 
 
