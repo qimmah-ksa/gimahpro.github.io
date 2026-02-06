@@ -269,7 +269,7 @@ textarea {
    استجابة الشاشات الصغيرة
 ================================ */
 @media (max-width: 768px) {
-    nav ul {
+    nav {
         gap: 15px;
     }
 
@@ -281,6 +281,8 @@ textarea {
         padding: 60px 5%;
     }
 }
+
+/* روابط النافبار */
 nav a {
     color: #ffffff;
     font-weight: 600;
@@ -292,22 +294,14 @@ nav a {
 nav a:hover {
     color: var(--gold);
 }
-nav a {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 16px;
-    margin-left: 20px;
-    transition: 0.2s;
-}
 
-nav a:hover {
-    color: var(--gold);
-}
+/* الهيدر (لو ما هو موجود فوق) */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 /* ================================
    الأنيميشن
 ================================ */
@@ -321,12 +315,3 @@ header {
         transform: translateY(0);
     }
 }
-
-
-
-
-
-
-
-
-
