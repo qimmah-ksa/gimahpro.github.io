@@ -24,12 +24,7 @@
             border-bottom: 2px solid var(--accent-color);
         }
 
-        .logo-container { display: flex; align-items: center; gap: 15px; }
-        /* تعديل حجم الشعار ليتناسب مع الأيقونة الجديدة */
-        .logo-container img { height: 60px; width: auto; }
-        .logo-container span { color: var(--accent-color); font-size: 24px; font-weight: 900; }
-
-        nav { display: flex; align-items: center; gap: 20px; }
+       nav { display: flex; align-items: center; gap: 20px; }
         nav a { color: var(--text-white); text-decoration: none; font-weight: 600; transition: 0.3s; font-size: 15px; }
         nav a:hover { color: var(--accent-color); }
         nav a.contact-btn-nav { 
@@ -102,3 +97,4 @@
             section { padding: 50px 5%; }
         }
     </style>
+
