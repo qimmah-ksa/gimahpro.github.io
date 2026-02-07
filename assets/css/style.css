@@ -1,8 +1,8 @@
 <style>
-        /* المتغيرات اللونية والتنسيق العام */
+        /* المتغيرات اللونية */
         :root {
-            --primary-color: #002147; /* كحلي عميق */
-            --accent-color: #D4AF37;  /* ذهبي */
+            --primary-color: #002147; /* كحلي عميق للثقة */
+            --accent-color: #D4AF37;  /* ذهبي للتميز (نفس لون الشعار الجديد) */
             --text-white: #ffffff;
             --soft-gray: #f4f7f6;
             --text-dark: #333333;
@@ -11,10 +11,10 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Cairo', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #fff; scroll-behavior: smooth; }
 
-        /* الهيدر بدون صورة الشعار */
+        /* الهيدر */
         header {
             background-color: var(--primary-color);
-            padding: 15px 5%;
+            padding: 10px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -24,8 +24,10 @@
             border-bottom: 2px solid var(--accent-color);
         }
 
-        .logo-container { display: flex; align-items: center; }
-        .logo-container span { color: var(--accent-color); font-size: 26px; font-weight: 900; letter-spacing: 1px; }
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        /* تعديل حجم الشعار ليتناسب مع الأيقونة الجديدة */
+        .logo-container img { height: 60px; width: auto; }
+        .logo-container span { color: var(--accent-color); font-size: 24px; font-weight: 900; }
 
         nav { display: flex; align-items: center; gap: 20px; }
         nav a { color: var(--text-white); text-decoration: none; font-weight: 600; transition: 0.3s; font-size: 15px; }
@@ -35,13 +37,13 @@
             color: var(--primary-color); 
             padding: 8px 20px; 
             border-radius: 5px; 
-            font-weight: 700;
         }
         nav a.contact-btn-nav:hover { background-color: #b8932f; color: #fff; }
 
         /* قسم البطل - Hero */
         .hero {
-            background: linear-gradient(rgba(0,33,71,0.7), rgba(0,33,71,0.7)), url('https://images.unsplash.com/photo-1454165833767-131435bb4496?auto=format&fit=crop&w=1350&q=80');
+            /* استخدام صورة خلفية احترافية */
+            background: linear-gradient(rgba(0,33,71,0.7), rgba(0,33,71,0.7)), url('https://images.unsplash.com/photo-1454165833767-131435bb4496?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover; background-position: center;
             height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; color: #fff; padding: 20px;
@@ -49,7 +51,7 @@
         .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); color: var(--accent-color); margin-bottom: 20px; }
         .hero p { max-width: 800px; font-size: 1.2rem; margin-bottom: 30px; }
 
-        .btn-main { background: var(--accent-color); color: var(--primary-color); padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: 0.3s; display: inline-block; }
+        .btn-main { background: var(--accent-color); color: var(--primary-color); padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: 0.3s; }
         .btn-main:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
         /* الأقسام العامة */
@@ -57,7 +59,14 @@
         .section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary-color); }
         .section-title::after { content: ''; display: block; width: 80px; height: 4px; background: var(--accent-color); margin: 10px auto; }
 
-        .about-text-container { max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.1rem; }
+        /* تنسيق خاص لقسم من نحن بعد التعديل */
+        .about-text-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
 
         /* الشبكات (Grids) */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
