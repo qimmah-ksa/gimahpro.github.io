@@ -10,65 +10,91 @@
         margin: 0;
         padding: 0;
         font-family: "Tajawal", Arial, sans-serif;
-        background: #f4f6f9;
+        background: linear-gradient(135deg, #0a1a33, #0f2a52, #c9a44b);
+        background-size: 200% 200%;
+        animation: gradientMove 10s ease infinite;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        color: white;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50% }
+        50% { background-position: 100% 50% }
+        100% { background-position: 0% 50% }
     }
 
     .container {
         text-align: center;
-        background: white;
+        background: rgba(255, 255, 255, 0.08);
         padding: 40px 30px;
-        border-radius: 14px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        border-radius: 16px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 4px 25px rgba(0,0,0,0.3);
         max-width: 520px;
         width: 90%;
+        border: 1px solid rgba(255,255,255,0.15);
     }
 
     h1 {
         margin-bottom: 15px;
-        color: #222;
-        font-size: 28px;
+        font-size: 30px;
         font-weight: bold;
+        color: #f7d57a;
     }
 
     p {
-        color: #555;
         margin-bottom: 30px;
         font-size: 17px;
         line-height: 1.7;
+        color: #f0f0f0;
     }
 
     .card {
-        display: block;
-        background: #ffffff;
-        border: 2px solid #e5e7eb;
-        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: rgba(255,255,255,0.12);
+        border: 2px solid rgba(255,255,255,0.25);
+        border-radius: 14px;
         padding: 20px;
         margin: 15px 0;
         text-decoration: none;
-        color: #222;
+        color: white;
         transition: 0.25s;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     }
 
     .card:hover {
-        transform: translateY(-4px);
-        border-color: #007bff;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        transform: translateY(-5px);
+        border-color: #f7d57a;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .card img {
+        width: 70px;
+        height: 70px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .card-content {
+        text-align: right;
     }
 
     .card-title {
         font-size: 20px;
         font-weight: bold;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
+        color: #f7d57a;
     }
 
     .card-desc {
         font-size: 15px;
-        color: #666;
+        color: #e8e8e8;
     }
 </style>
 </head>
@@ -79,18 +105,28 @@
     <h1>مرحبًا بك في قمة التميز</h1>
     <p>
         يسعدنا وجودك هنا. اختر وجهتك للبدء في رحلتك نحو المعرفة  
-        والتطوير المالي والإداري.
+        والتطوير المالي والإداري.  
+        نحن هنا لنقدّم لك محتوى ثريًا وخدمات ترتقي بك نحو التميز.
     </p>
 
+    <!-- كرت قمة التميز -->
     <a href="https://www.mal-invest.com" class="card">
-        <div class="card-title">قمة التميز للاستشارات المالية والإدارية</div>
-        <div class="card-desc">صفحة الهبوط الرسمية – خدمات، حلول، واستشارات احترافية</div>
+        <img src="branding/qimmah-logo.png" alt="شعار قمة التميز">
+        <div class="card-content">
+            <div class="card-title">قمة التميز للاستشارات المالية والإدارية</div>
+            <div class="card-desc">صفحة الهبوط الرسمية — خدمات احترافية وحلول مبتكرة</div>
+        </div>
     </a>
 
+    <!-- كرت مدونة قمة التميز -->
     <a href="https://blog.mal-invest.com" class="card">
-        <div class="card-title">مدونة قمة التميز</div>
-        <div class="card-desc">مقالات، أدلة، ومواضيع تثري معرفتك المالية والإدارية</div>
+        <img src="branding/blog-logo.png" alt="شعار مدونة قمة التميز">
+        <div class="card-content">
+            <div class="card-title">مدونة قمة التميز</div>
+            <div class="card-desc">مقالات وأدلة تثري معرفتك المالية والإدارية</div>
+        </div>
     </a>
+
 </div>
 
 </body>
