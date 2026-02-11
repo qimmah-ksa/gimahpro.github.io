@@ -102,3 +102,16 @@ footer { background: var(--primary-navy); color: #bbb; padding: 70px 10% 30px; }
     header { flex-direction: column; gap: 15px; }
     nav { gap: 10px; }
 }
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
