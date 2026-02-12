@@ -115,3 +115,11 @@ footer { background: var(--primary-navy); color: #bbb; padding: 70px 10% 30px; }
     height: 100%;
     border-radius: 50%;
 }
+.legal-container {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.9;
+    text-align: right;
+}
+
