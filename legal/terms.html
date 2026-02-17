@@ -18,6 +18,52 @@
 </script>
     <!-- ربط ملف التنسيق الأساسي -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+    /* 1. الحاوية الرئيسية */
+    .legal-page-container {
+        max-width: 850px; 
+        margin: 20px auto !important; /* تقليل المسافة من الأعلى بقوة */
+        padding: 0 20px;
+    }
+
+    /* 2. إلغاء مسافات الـ section العملاقة (هذا هو سبب المشكلة الرئيسي) */
+    .legal-page-container section { 
+        margin-bottom: 0 !important; 
+        padding-top: 5px !important; 
+        padding-bottom: 5px !important; 
+    }
+
+    /* 3. العناوين */
+    .legal-page-container h1 {
+        color: var(--primary-navy);
+        font-size: 2rem;
+        margin-bottom: 15px !important;
+        border-bottom: 3px solid var(--accent-gold);
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+
+    .legal-page-container h3 {
+        color: var(--primary-navy);
+        margin-top: 15px !important; /* مسافة بسيطة قبل كل بند */
+        margin-bottom: 5px !important; 
+        font-size: 1.3rem;
+    }
+
+    /* 4. الفقرات (المسافة بين الأسطر والفقرات) */
+    .legal-page-container p {
+        color: #444;
+        line-height: 1.6 !important; 
+        margin-bottom: 10px !important; /* مسافة صغيرة جداً بين الفقرات */
+        text-align: justify;
+    }
+
+    /* 5. تصفير الـ container الأصلي الذي قد يحمل padding كبير */
+    .container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+</style>
 </head>
 
 <body>
@@ -130,6 +176,7 @@
 </body>
 
 </html>
+
 
 
 
