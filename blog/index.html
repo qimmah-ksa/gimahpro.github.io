@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مدونة قمة التميز - مقالات واستشارات في الإدارة، المالية وتطوير الأعمال">
+    <title>المدونة | قمة التميز</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* تنسيقات خاصة بصفحة معرض المقالات */
+        .blog-header {
+            background: linear-gradient(rgba(0,33,71,0.9), rgba(0,33,71,0.9)), url('https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 10%;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 50px;
+        }
+
+        .blog-header h1 {
+            color: var(--accent-gold);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: var(--transition);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-gold);
+        }
+
+        .blog-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .blog-category {
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .blog-card-title {
+            color: var(--primary-navy);
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .blog-card-excerpt {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: var(--primary-navy);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .read-more:hover {
+            color: var(--accent-gold);
+            padding-right: 5px;
+        }
+
+        /* تنسيق الفوتر h4 بالخط الذهبي كما طلبته سابقاً لضمان التناسق */
+        .footer-col h4 {
+            position: relative;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="brand-name">قمة التميز</a>
+        <nav>
+            <a href="../index.html">الرئيسية</a>
+            <a href="../index.html#about">من نحن</a>
+            <a href="../index.html#services">الخدمات</a>
+            <a href="index.html" style="color: var(--accent-gold);">المدونة</a>
+            <a href="../index.html#contact" class="nav-cta">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section class="blog-header">
+        <h1>مدونة قمة التميز</h1>
+        <p>رؤى استشارية ومقالات تخصصية لتطوير أعمالك</p>
+    </section>
+
+    <main class="blog-grid">
+        
+        <article class="blog-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="تحليل مالي" class="blog-card-img">
+            <div class="blog-card-content">
+                <span class="blog-category">استشارات مالية</span>
+                <h2 class="blog-card-title">أهمية التحليل المالي في اتخاذ القرارات الإدارية</h2>
+                <p class="blog-card-excerpt">تعرف على كيفية تحويل الأرقام الصماء إلى قرارات استراتيجية تضمن نمو شركتك...</p>
+                <a href="article-1.html" class="read-more">اقرأ المقال الكامل ←</a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="تطوير الأعمال" class="blog-card-img">
+            <div class="blog-card-content">
+                <span class="blog-category">تطوير الأعمال</span>
+                <h2 class="blog-card-title">كيف تبني هوية مؤسسية قوية في السوق السعودي؟</h2>
+                <p class="blog-card-excerpt">دليل شامل حول بناء العلامة التجارية التي تعكس قيم التميز والاحترافية...</p>
+                <a href="article-2.html" class="read-more">اقرأ المقال الكامل ←</a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=500&q=80" alt="إدارة المشاريع" class="blog-card-img">
+            <div class="blog-card-content">
+                <span class="blog-category">إدارة مؤسسية</span>
+                <h2 class="blog-card-title">استراتيجيات تحسين الأداء المؤسسي لعام 2026</h2>
+                <p class="blog-card-excerpt">استعراض لأحدث النظم الإدارية التي تساعد المنشآت على التكيف مع التحول الرقمي...</p>
+                <a href="article-3.html" class="read-more">اقرأ المقال الكامل ←</a>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-col" style="grid-column: span 1.5;">
+                <h4>قمة التميز</h4>
+                <p>نقدم حلولًا احترافية تدعم نمو الشركات وتطوير أعمالها، ونساعد المؤسسات على اتخاذ قرارات استراتيجية مبنية على بيانات دقيقة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <a href="../index.html#about">من نحن</a>
+                <a href="../index.html#services">خدماتنا</a>
+                <a href="index.html">المدونة</a>
+            </div>
+            <div class="footer-col">
+                <h4>الصفحات القانونية</h4>
+                <a href="../legal/privacy.html">سياسة الخصوصية</a>
+                <a href="../legal/terms.html">شروط الاستخدام</a>
+                <a href="../legal/disclaimer.html">إخلاء المسؤولية</a>
+            </div>
+            <div class="footer-col">
+                <h4>اتصل بنا</h4>
+                <p>الرياض - حي الياسمين</p>
+                <p>+966 533221169</p>
+                <p>contact@gimahpro.com</p>
+            </div>
+        </div>
+        <div class="copy" style="border-top: 1px solid var(--accent-gold); margin-top: 20px;">
+            جميع الحقوق محفوظة © 2026 قمة التميز للاستشارات المالية والإدارية
+        </div>
+    </footer>
+
+</body>
+</html>
