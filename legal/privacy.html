@@ -8,39 +8,52 @@
     
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <style>
-        /* تحسين المسافات المخصصة لهذه الصفحة */
-        .legal-page-container {
-            max-width: 850px; 
-            margin: 30px auto; /* تقليل المسافة العلوية للمحتوى */
-            padding: 0 20px;
-        }
+  <style>
+    /* 1. الحاوية الرئيسية */
+    .legal-page-container {
+        max-width: 850px; 
+        margin: 20px auto !important; /* تقليل المسافة من الأعلى بقوة */
+        padding: 0 20px;
+    }
 
-        .legal-page-container h1 {
-            color: var(--primary-navy);
-            font-size: 2rem;
-            margin-bottom: 20px;
-            border-bottom: 3px solid var(--accent-gold);
-            padding-bottom: 5px;
-            display: inline-block;
-        }
+    /* 2. إلغاء مسافات الـ section العملاقة (هذا هو سبب المشكلة الرئيسي) */
+    .legal-page-container section { 
+        margin-bottom: 0 !important; 
+        padding-top: 5px !important; 
+        padding-bottom: 5px !important; 
+    }
 
-        .legal-page-container h3 {
-            color: var(--primary-navy);
-            margin-top: 15px; /* تقليل المسافة فوق العنوان الفرعي */
-            margin-bottom: 8px; /* تقليل المسافة تحت العنوان الفرعي */
-            font-size: 1.3rem;
-        }
+    /* 3. العناوين */
+    .legal-page-container h1 {
+        color: var(--primary-navy);
+        font-size: 2rem;
+        margin-bottom: 15px !important;
+        border-bottom: 3px solid var(--accent-gold);
+        padding-bottom: 5px;
+        display: inline-block;
+    }
 
-        .legal-page-container p {
-            color: #444;
-            line-height: 1.7; /* تقليل ارتفاع السطر قليلاً ليكون متراصاً أكثر */
-            margin-bottom: 12px; /* تقليل المسافة بين الفقرات */
-            text-align: justify;
-        }
+    .legal-page-container h3 {
+        color: var(--primary-navy);
+        margin-top: 15px !important; /* مسافة بسيطة قبل كل بند */
+        margin-bottom: 5px !important; 
+        font-size: 1.3rem;
+    }
 
-        section { margin-bottom: 20px; } /* تقليل المسافة بين الأقسام */
-    </style>
+    /* 4. الفقرات (المسافة بين الأسطر والفقرات) */
+    .legal-page-container p {
+        color: #444;
+        line-height: 1.6 !important; 
+        margin-bottom: 10px !important; /* مسافة صغيرة جداً بين الفقرات */
+        text-align: justify;
+    }
+
+    /* 5. تصفير الـ container الأصلي الذي قد يحمل padding كبير */
+    .container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+</style>
 </head>
 
 <body>
@@ -147,3 +160,4 @@
 
 </body>
 </html>
+
