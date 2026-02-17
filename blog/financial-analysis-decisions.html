@@ -12,7 +12,7 @@
         .article-container {
             max-width: 900px;
             margin: 50px auto;
-            padding: 0 20px;
+            padding: 0 25px;
         }
         .featured-image {
             width: 100%;
@@ -33,6 +33,9 @@
             font-size: 2.5rem;
             margin-bottom: 25px;
             line-height: 1.3;
+            border-bottom: 3px solid var(--accent-gold);
+            padding-bottom: 15px;
+            display: inline-block;
         }
         .article-content p {
             font-size: 1.15rem;
@@ -48,28 +51,43 @@
             border-right: 5px solid var(--accent-gold);
             padding-right: 15px;
         }
+        
+        /* تعديل صندوق الدعوة للعمل ليكون مرئياً وواضحاً */
         .cta-box {
             background: var(--primary-navy);
-            color: var(--white);
-            padding: 40px;
+            padding: 50px 40px;
             border-radius: 15px;
             text-align: center;
             margin-top: 60px;
             border: 2px solid var(--accent-gold);
         }
-        .cta-box h3 { color: var(--accent-gold); margin-bottom: 15px; }
+        .cta-box h3 { 
+            color: var(--accent-gold); 
+            margin-bottom: 20px; 
+            font-size: 1.8rem;
+        }
+        .cta-box p { 
+            color: #ffffff !important; /* جعل النص أبيض صريح ليكون مرئياً */
+            font-size: 1.3rem !important;
+            margin-bottom: 25px;
+            text-align: center !important;
+        }
         .btn-gold {
             background: var(--accent-gold);
             color: var(--primary-navy);
-            padding: 12px 30px;
-            border-radius: 5px;
+            padding: 15px 40px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
             display: inline-block;
-            margin-top: 20px;
             transition: var(--transition);
+            font-size: 1.1rem;
         }
-        .btn-gold:hover { background: var(--white); transform: translateY(-3px); }
+        .btn-gold:hover { 
+            background: var(--white); 
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
@@ -79,13 +97,13 @@
         <nav>
             <a href="../index.html">الرئيسية</a>
             <a href="../index.html#about">من نحن</a>
-            <a href="index.html" style="color: var(--accent-gold);">المدونة</a>
+            <a href="../index.html#services">الخدمات</a>
             <a href="../index.html#contact" class="nav-cta">تواصل معنا</a>
         </nav>
     </header>
 
     <article class="article-container">
-        <span class="post-meta">استشارات مالية | 17 فبراير 2026</span>
+        <span class="post-meta">استشارات مالية | قمة التميز</span>
         <div class="article-content">
             <h1>أهمية التحليل المالي في اتخاذ القرارات الإدارية الاستراتيجية</h1>
             
@@ -113,21 +131,32 @@
 
     <footer>
         <div class="footer-main">
-            <div class="footer-col">
+            <div class="footer-col" style="grid-column: span 1.5;">
                 <h4>قمة التميز</h4>
-                <p>شريككم الموثوق في الاستشارات المالية والإدارية.</p>
+                <p>نقدم حلولًا احترافية تدعم نمو الشركات وتطوير أعمالها، ونساعد المؤسسات على اتخاذ قرارات استراتيجية مبنية على بيانات دقيقة.</p>
             </div>
             <div class="footer-col">
                 <h4>روابط سريعة</h4>
-                <a href="../index.html">الرئيسية</a>
+                <a href="../index.html#about">من نحن</a>
+                <a href="../index.html#services">خدماتنا</a>
                 <a href="index.html">المدونة</a>
             </div>
             <div class="footer-col">
+                <h4>الصفحات القانونية</h4>
+                <a href="../legal/privacy.html">سياسة الخصوصية</a>
+                <a href="../legal/terms.html">شروط الاستخدام</a>
+                <a href="../legal/disclaimer.html">إخلاء المسؤولية</a>
+            </div>
+            <div class="footer-col">
                 <h4>اتصل بنا</h4>
+                <p>الرياض - حي الياسمين</p>
+                <p>+966 533221169</p>
                 <p>contact@gimahpro.com</p>
             </div>
         </div>
-        <div class="copy">جميع الحقوق محفوظة © 2026 قمة التميز</div>
+        <div class="copy">
+            جميع الحقوق محفوظة © 2026 قمة التميز للاستشارات المالية والإدارية
+        </div>
     </footer>
 
 </body>
