@@ -116,13 +116,12 @@ footer {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0; /* يبدأ من جهة اليمين لأن الموقع بالعربي */
-    width: 40px; /* طول الخط الذهبي */
-    height: 3px; /* سماكة الخط */
-    background-color: var(--accent-gold);
+    right: 0; 
+    width: 100%; /* سيأخذ الآن عرض العنوان بالكامل */
+    height: 3px; 
+    background: var(--accent-gold);
     border-radius: 2px;
 }
-
 .footer-col a { 
     color: var(--white); 
     text-decoration: none; 
@@ -189,4 +188,5 @@ footer {
     margin-bottom: 20px;
     text-align: justify; /* لضبط نهايات الأسطر بشكل جمالي */
 }
+
 
