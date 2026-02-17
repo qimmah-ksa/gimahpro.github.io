@@ -115,3 +115,22 @@ footer { background: var(--primary-navy); color: #bbb; padding: 70px 10% 30px; }
     height: 100%;
     border-radius: 50%;
 }
+/* تنسيق خاص بصفحات المحتوى الطويل (قانوني + مدونة) */
+.content-wrapper {
+    max-width: 900px; /* العرض المثالي للقراءة */
+    margin: 40px auto; /* لتوسيط الحاوية وترك مسافة من الأعلى والأسفل */
+    padding: 0 20px;   /* هوامش جانبية للجوال لكي لا يلتصق النص بالحافة */
+    text-align: justify; /* اختياري: لجعل نهايات الأسطر متساوية */
+}
+
+.content-wrapper h1, .content-wrapper h2 {
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+}
+
+.content-wrapper p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
