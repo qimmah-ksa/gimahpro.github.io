@@ -115,22 +115,32 @@ footer { background: var(--primary-navy); color: #bbb; padding: 70px 10% 30px; }
     height: 100%;
     border-radius: 50%;
 }
-/* تنسيق خاص بصفحات المحتوى الطويل (قانوني + مدونة) */
-.content-wrapper {
+/* تنسيق الصفحات القانونية والمحتوى الطويل */
+.legal-page-container {
     max-width: 900px; /* العرض المثالي للقراءة */
-    margin: 40px auto; /* لتوسيط الحاوية وترك مسافة من الأعلى والأسفل */
-    padding: 0 20px;   /* هوامش جانبية للجوال لكي لا يلتصق النص بالحافة */
-    text-align: justify; /* اختياري: لجعل نهايات الأسطر متساوية */
+    margin: 50px auto; /* توسيط الحاوية وترك مسافة من الأعلى */
+    padding: 0 25px;   /* مسافة أمان جانبية للجوال */
+    background: #ffffff;
 }
 
-.content-wrapper h1, .content-wrapper h2 {
+.legal-page-container h1 {
     color: var(--primary-navy);
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--accent-gold);
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-.content-wrapper p {
+.legal-page-container h3 {
+    color: var(--primary-navy);
+    margin-top: 25px;
     margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #444;
 }
 
+.legal-page-container p {
+    color: #444;
+    line-height: 1.9; /* مسافة بين الأسطر لراحة العين */
+    margin-bottom: 20px;
+    text-align: justify; /* لضبط نهايات الأسطر بشكل جمالي */
+}
