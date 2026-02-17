@@ -89,13 +89,58 @@ section { padding: 90px 10%; }
 .social-links a:hover { background: var(--accent-gold); transform: rotate(360deg); }
 
 /* Footer */
-footer { background: var(--primary-navy); color: #bbb; padding: 70px 10% 30px; }
-.footer-main { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.footer-col h4 { color: var(--white); margin-bottom: 25px; }
-.footer-col a { color: var(--white); text-decoration: none; display: block; margin-bottom: 12px; }
-.footer-col a:hover { color: var(--accent-gold); padding-right: 8px; }
-.copy { text-align: center; padding-top: 30px; font-size: 0.9rem; }
+footer { 
+    background: var(--primary-navy); 
+    color: #bbb; 
+    padding: 70px 10% 30px; 
+}
 
+.footer-main { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 40px; 
+    padding-bottom: 40px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+/* التعديل هنا لإضافة الخط الذهبي */
+.footer-col h4 { 
+    color: var(--white); 
+    margin-bottom: 25px; 
+    position: relative; /* ضروري لتموضع الخط */
+    padding-bottom: 10px; /* مسافة بين النص والخط */
+    display: inline-block; /* يجعل الخط بطول الكلمة فقط */
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; /* يبدأ من جهة اليمين لأن الموقع بالعربي */
+    width: 40px; /* طول الخط الذهبي */
+    height: 3px; /* سماكة الخط */
+    background-color: var(--accent-gold);
+    border-radius: 2px;
+}
+
+.footer-col a { 
+    color: var(--white); 
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 12px; 
+    transition: var(--transition); 
+}
+
+.footer-col a:hover { 
+    color: var(--accent-gold); 
+    padding-right: 8px; /* حركة بسيطة لجهة اليسار عند التمرير */
+}
+
+.copy { 
+    text-align: center; 
+    padding-top: 30px; 
+    font-size: 0.9rem; 
+}
 /* Responsive */
 @media (max-width: 992px) {
     .contact-layout { grid-template-columns: 1fr; }
@@ -144,3 +189,4 @@ footer { background: var(--primary-navy); color: #bbb; padding: 70px 10% 30px; }
     margin-bottom: 20px;
     text-align: justify; /* لضبط نهايات الأسطر بشكل جمالي */
 }
+
