@@ -13,7 +13,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- مقالات المدونة -->
+  <!-- مقالات المدونة الستة -->
   <url>
     <loc>https://www.gimahpro.com/blog/financial-analysis-decisions.html</loc>
     <priority>0.7</priority>
@@ -36,14 +36,11 @@
 
   <url>
     <loc>https://www.gimahpro.com/blog/systems-development-efficiency.html</loc>
-    <lastmod>2026-02-21</lastmod>
     <priority>0.7</priority>
   </url>
 
-  <!-- الصفحة الناقصة (تمت إضافتها الآن) -->
   <url>
-    <loc>https://www.gimahpro.com/blog/corporate-identity-development.html</loc>
-    <lastmod>2026-02-21</lastmod>
+    <loc>https://www.gimahpro.com/blog/operational-risk-management.html</loc>
     <priority>0.7</priority>
   </url>
 
