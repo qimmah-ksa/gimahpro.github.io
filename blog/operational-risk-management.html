@@ -1,62 +1,287 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="تعرف على دليلك الشامل لإدارة المخاطر التشغيلية وكيفية حماية منشأتك مع قمة التميز للاستشارات المالية والإدارية.">
-<title>إدارة المخاطر التشغيلية | مدونة قمة التميز</title>
-<link rel="icon" type="image/png" href="../favicon.png">
-<link rel="stylesheet" href="../assets/css/style.css">
-<style>
-.article-container { max-width: 900px; margin: 50px auto; padding: 0 25px; }
-.featured-image { width: 100%; height: 450px; object-fit: cover; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-.post-meta { color: var(--accent-gold); font-weight: 700; margin-bottom: 10px; display: block; }
-.article-content h1 { color: var(--primary-navy); font-size: 2.5rem; margin-bottom: 25px; line-height: 1.3; border-bottom: 3px solid var(--accent-gold); padding-bottom: 15px; display: inline-block; }
-.article-content p { font-size: 1.15rem; color: #444; line-height: 1.9; margin-bottom: 20px; text-align: justify; }
-.article-content h2 { color: var(--primary-navy); margin-top: 40px; margin-bottom: 20px; border-right: 5px solid var(--accent-gold); padding-right: 15px; }
-.cta-box { background: var(--primary-navy); padding: 50px 40px; border-radius: 15px; text-align: center; margin-top: 60px; border: 2px solid var(--accent-gold); }
-.cta-box h3 { color: var(--accent-gold); margin-bottom: 20px; font-size: 1.8rem; }
-.cta-box p { color: #ffffff !important; font-size: 1.3rem !important; margin-bottom: 25px; text-align: center !important; }
-.btn-gold { background: var(--accent-gold); color: var(--primary-navy); padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: var(--transition); font-size: 1.1rem; }
-.btn-gold:hover { background: var(--white); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت وكيفية بناء نظام فعال لاستمرارية الأعمال.">
+    <title>دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+        .featured-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .post-meta {
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .article-content h1 {
+            color: var(--primary-navy);
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            border-bottom: 3px solid var(--accent-gold);
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        .article-content p {
+            font-size: 1.15rem;
+            color: #444;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            color: var(--primary-navy);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--accent-gold);
+            padding-right: 15px;
+        }
+        .article-content ul {
+            margin-bottom: 20px;
+            padding-right: 20px;
+        }
+        .article-content li {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            margin-bottom: 8px;
+        }
+        .cta-box {
+            background: var(--primary-navy);
+            padding: 50px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 60px;
+            border: 2px solid var(--accent-gold);
+        }
+        .cta-box h3 { 
+            color: var(--accent-gold); 
+            margin-bottom: 20px; 
+            font-size: 1.8rem;
+        }
+        .cta-box p { 
+            color: #ffffff !important;
+            font-size: 1.3rem !important;
+            margin-bottom: 25px;
+            text-align: center !important;
+        }
+        .btn-gold {
+            background: var(--accent-gold);
+            color: var(--primary-navy);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+        .btn-gold:hover { 
+            background: var(--white); 
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
-<header>
-<a href="../index.html" class="brand-name">قمة التميز</a>
-<nav>
-<a href="../index.html">الرئيسية</a>
-<a href="../index.html#about">من نحن</a>
-<a href="../index.html#services">الخدمات</a>
-<a href="index.html">المدونة</a>
-<a href="../index.html#contact" class="nav-cta">تواصل معنا</a>
-</nav>
-</header>
-<article class="article-container">
-<span class="post-meta">إدارة المخاطر | قمة التميز</span>
-<div class="article-content">
-<h1>دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت</h1>
-<img src="" alt="إدارة المخاطر" class="featured-image">
-<p>في بيئة الأعمال المعقدة اليوم، لا تقتصر الاستدامة على تحقيق الأرباح فحسب، بل على القدرة على الصمود أمام التحديات المفاجئة. نحن في <strong>قمة التميز للاستشارات المالية والإدارية</strong> نؤمن أن إدارة المخاطر هي الدرع الواقي الذي يضمن استمرارية طموحاتكم.</p>
-<h2>ما هي المخاطر التشغيلية؟</h2>
-<p>المخاطر التشغيلية هي التهديدات الناتجة عن قصور في الإجراءات الداخلية، أو الأخطاء البشرية، أو الأنظمة التقنية. في <strong>قمة التميز</strong>، نساعدكم على تحويل هذه التهديدات إلى فرص للتحسين المستمر.</p>
 
-</article>
-<footer>
-<div class="footer-main" style="display: flex; justify-content: space-around; background: #002147; color: white; padding: 40px;">
-<div class="footer-col">
-<h4>روابط سريعة</h4>
-<a href="../index.html" style="color: white; display: block;">الرئيسية</a>
-<a href="index.html" style="color: white; display: block;">المدونة</a>
-</div>
-<div class="footer-col">
-<h4>اتصل بنا</h4>
-<p>contact@gimahpro.com</p>
-<p>+966 533221169</p>
-</div>
-</div>
-<div class="copy" style="text-align: center; padding: 20px; background: #001a38; color: white;">جميع الحقوق محفوظة © 2026 قمة التميز</div>
-</footer>
+    <header>
+        <a href="../index.html" class="brand-name">قمة التميز</a>
+        <nav>
+            <a href="../index.html">الرئيسية</a>
+            <a href="../index.html#about">من نحن</a>
+            <a href="../index.html#services">الخدمات</a>
+            <a href="index.html">المدونة</a>
+            <a href="../index.html#contact" class="nav-cta">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <article class="article-container">
+        <span class="post-meta">استشارات إدارية وتشغيلية | قمة التميز</span>
+        <div class="article-content">
+            <h1>دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت</h1>
+            
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1350&q=80" alt="إدارة المخاطر التشغيلية في المنشآت" class="featured-image">
+
+            <p>
+                في عالم الأعمال الحديث، لم تعد استمرارية المنشأة مسألة حظ أو صدفة، بل نتيجة مباشرة لمدى قدرتها على 
+                <strong>إدارة المخاطر التشغيلية</strong> بوعي واحترافية. فالمخاطر لم تعد استثناءً، بل جزءًا طبيعيًا من بيئة العمل اليومية، 
+                وهنا يأتي دور بناء نظام متكامل يحد من آثارها ويحوّلها إلى فرص للتحسين والتطوير.
+            </p>
+
+            <p>
+                في <strong>قمة التميز للاستشارات المالية والإدارية</strong> نؤمن أن إدارة المخاطر التشغيلية ليست مجرد وثائق أو نماذج، 
+                بل ثقافة مؤسسية متجذرة في كل إجراء وقرار داخل المنشأة.
+            </p>
+
+            <h2>ما هي المخاطر التشغيلية؟ ولماذا تعد حاسمة لمنشأتك؟</h2>
+            <p>
+                المخاطر التشغيلية هي جميع الأحداث أو العوامل التي قد تعيق سير العمليات اليومية أو تؤثر على جودة المخرجات 
+                أو تسبب خسائر مالية أو معنوية للمنشأة. قد تنشأ هذه المخاطر من:
+            </p>
+            <ul>
+                <li><strong>الأفراد:</strong> مثل الأخطاء البشرية، ضعف التدريب، أو غياب المساءلة.</li>
+                <li><strong>الأنظمة:</strong> تعطل الأنظمة التقنية، ضعف الأمن السيبراني، أو تقادم البنية التحتية.</li>
+                <li><strong>العمليات:</strong> إجراءات غير واضحة، أو ازدواجية في المهام، أو غياب التوثيق.</li>
+                <li><strong>العوامل الخارجية:</strong> أزمات اقتصادية، كوارث طبيعية، أو تغييرات تنظيمية وتشريعية.</li>
+            </ul>
+            <p>
+                إن تجاهل هذه المخاطر قد يؤدي إلى توقف العمليات، فقدان العملاء، تراجع السمعة، أو حتى تعثر المنشأة بالكامل.
+            </p>
+
+            <h2>أهم مصادر المخاطر التشغيلية داخل المنشآت</h2>
+            <p>
+                لفهم كيفية إدارة المخاطر، لا بد أولًا من التعرف على أبرز مصادرها داخل بيئة العمل:
+            </p>
+            <p>
+                1. <strong>الأخطاء البشرية:</strong>  
+                قد يكون الموظف مجتهدًا، لكنه غير موجه بشكل صحيح. نقص التدريب أو غياب الوصف الوظيفي الواضح 
+                يؤديان إلى قرارات خاطئة أو تنفيذ غير دقيق للمهام.
+            </p>
+            <p>
+                2. <strong>الأنظمة التقنية:</strong>  
+                الاعتماد الكبير على الأنظمة دون وجود خطط بديلة أو نسخ احتياطية يجعل المنشأة عرضة للتوقف عند أي عطل مفاجئ 
+                أو هجوم إلكتروني.
+            </p>
+            <p>
+                3. <strong>العمليات والإجراءات:</strong>  
+                العمليات غير الموثقة أو المعقدة تزيد من احتمالية حدوث الأخطاء، وتضعف القدرة على المتابعة والرقابة.
+            </p>
+            <p>
+                4. <strong>العوامل الخارجية:</strong>  
+                مثل التغيرات في الأنظمة الحكومية، أو الأزمات الاقتصادية، أو الظروف الطارئة التي قد تؤثر على سلسلة الإمداد 
+                أو على سلوك العملاء.
+            </p>
+
+            <h2>خطوات عملية لإدارة المخاطر التشغيلية بفعالية</h2>
+            <p>
+                إدارة المخاطر التشغيلية ليست عملاً عشوائيًا، بل تمر عبر منهجية واضحة يمكن تلخيصها في الخطوات التالية:
+            </p>
+
+            <p>
+                <strong>أولًا: تحديد المخاطر</strong><br>
+                تبدأ العملية برسم صورة شاملة للعمليات داخل المنشأة، ثم طرح سؤال بسيط: 
+                "ما الذي يمكن أن يحدث ويؤثر على هذه العملية؟".  
+                يتم ذلك من خلال:
+            </p>
+            <ul>
+                <li><strong>تحليل سير العمليات اليومية.</strong></li>
+                <li><strong>مراجعة الحوادث السابقة والتقارير الداخلية.</strong></li>
+                <li><strong>إجراء مقابلات وورش عمل مع الموظفين.</strong></li>
+                <li><strong>استخدام قوائم فحص ونماذج تقييم جاهزة.</strong></li>
+            </ul>
+
+            <p>
+                <strong>ثانيًا: تقييم المخاطر</strong><br>
+                بعد تحديد المخاطر، يتم تقييم كل خطر وفقًا لمعيارين رئيسيين:
+            </p>
+            <ul>
+                <li><strong>احتمالية الحدوث:</strong> هل هو خطر متكرر أم نادر؟</li>
+                <li><strong>حجم التأثير:</strong> هل تأثيره بسيط أم قد يسبب توقفًا كاملًا للعمليات؟</li>
+            </ul>
+            <p>
+                ثم تُصنف المخاطر إلى مستويات (منخفض – متوسط – مرتفع) لتحديد الأولويات.
+            </p>
+
+            <p>
+                <strong>ثالثًا: وضع خطط الاستجابة</strong><br>
+                لا يكفي معرفة الخطر، بل يجب تحديد كيفية التعامل معه، وذلك عبر:
+            </p>
+            <ul>
+                <li><strong>خطط الوقاية:</strong> تقليل احتمالية حدوث الخطر من الأساس.</li>
+                <li><strong>خطط التخفيف:</strong> تقليل حجم الأثر في حال وقوع الخطر.</li>
+                <li><strong>خطط الطوارئ:</strong> ماذا نفعل عند وقوع الخطر؟ من المسؤول؟ ما الخطوات؟</li>
+                <li><strong>خطط التعافي واستمرارية الأعمال:</strong> كيف نعود للعمل بأسرع وقت ممكن؟</li>
+            </ul>
+
+            <p>
+                <strong>رابعًا: تطبيق الضوابط الرقابية</strong><br>
+                هنا تتحول الخطط إلى واقع من خلال:
+            </p>
+            <ul>
+                <li><strong>توثيق السياسات والإجراءات بشكل واضح.</strong></li>
+                <li><strong>تعزيز الرقابة الداخلية والفصل بين المهام الحساسة.</strong></li>
+                <li><strong>تحديث الأنظمة التقنية وتطبيق معايير الأمن السيبراني.</strong></li>
+                <li><strong>تدريب الموظفين بشكل مستمر على أفضل الممارسات.</strong></li>
+            </ul>
+
+            <p>
+                <strong>خامسًا: المراقبة والتحسين المستمر</strong><br>
+                إدارة المخاطر التشغيلية عملية مستمرة، وليست مشروعًا ينتهي، لذلك من الضروري:
+            </p>
+            <ul>
+                <li><strong>مراجعة دورية للمخاطر وخطط الاستجابة.</strong></li>
+                <li><strong>قياس مؤشرات الأداء المرتبطة بالمخاطر.</strong></li>
+                <li><strong>تحديث الإجراءات وفقًا للتغيرات الداخلية والخارجية.</strong></li>
+            </ul>
+
+            <h2>كيف تسهم إدارة المخاطر التشغيلية في نجاح منشأتك؟</h2>
+            <p>
+                عندما تُدار المخاطر التشغيلية بوعي واحترافية، فإن ذلك ينعكس مباشرة على أداء المنشأة من خلال:
+            </p>
+            <ul>
+                <li><strong>تقليل الخسائر غير المتوقعة</strong> الناتجة عن الأخطاء أو الأعطال.</li>
+                <li><strong>رفع كفاءة العمليات</strong> عبر إزالة الهدر وتحسين الإجراءات.</li>
+                <li><strong>تعزيز ثقة العملاء والمستثمرين</strong> بقدرة المنشأة على الاستمرارية.</li>
+                <li><strong>تحسين جودة المنتجات والخدمات</strong> من خلال تقليل الأخطاء المتكررة.</li>
+                <li><strong>بناء بيئة عمل مستقرة</strong> يشعر فيها الموظفون بالوضوح والأمان.</li>
+            </ul>
+            <p>
+                في النهاية، إدارة المخاطر التشغيلية ليست عبئًا إضافيًا على المنشأة، بل هي 
+                <strong>استثمار استراتيجي</strong> يحمي الحاضر ويصنع مستقبلًا أكثر استقرارًا ونموًا.
+            </p>
+
+            <div class="cta-box">
+                <h3>هل ترغب في بناء إطار متكامل لإدارة المخاطر التشغيلية في منشأتك؟</h3>
+                <p>في قمة التميز نساعدك على تصميم وتطبيق نظام احترافي لإدارة المخاطر يعزز استمرارية أعمالك وكفاءتك التشغيلية.</p>
+                <a href="../index.html#contact" class="btn-gold">احجز استشارة متخصصة الآن</a>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-col" style="grid-column: span 1.5;">
+                <h4>قمة التميز</h4>
+                <p>نقدم حلولًا احترافية تدعم نمو الشركات وتطوير أعمالها، ونساعد المؤسسات على بناء أنظمة فعّالة لإدارة المخاطر وتحسين الأداء التشغيلي.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <a href="../index.html#about">من نحن</a>
+                <a href="../index.html#services">خدماتنا</a>
+                <a href="index.html">المدونة</a>
+            </div>
+            <div class="footer-col">
+                <h4>الصفحات القانونية</h4>
+                <a href="../legal/privacy.html">سياسة الخصوصية</a>
+                <a href="../legal/terms.html">شروط الاستخدام</a>
+                <a href="../legal/disclaimer.html">إخلاء المسؤولية</a>
+            </div>
+            <div class="footer-col">
+                <h4>اتصل بنا</h4>
+                <p>الرياض - حي الياسمين</p>
+                <p>+966 533221169</p>
+                <p>contact@gimahpro.com</p>
+            </div>
+        </div>
+        <div class="copy">
+            جميع الحقوق محفوظة © 2026 قمة التميز للاستشارات المالية والإدارية
+        </div>
+    </footer>
+
 </body>
 </html>
