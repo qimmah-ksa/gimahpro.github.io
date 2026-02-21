@@ -9,10 +9,10 @@
 
   <!-- صفحة المدونة -->
   <url>
-    <loc>https://www.gimahpro.com/blog/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-
+  <loc>https://www.gimahpro.com/blog/</loc>
+  <priority>0.8</priority>
+</url>
+  
   <!-- مقالات المدونة الستة -->
   <url>
     <loc>https://www.gimahpro.com/blog/financial-analysis-decisions.html</loc>
@@ -61,3 +61,4 @@
   </url>
 
 </urlset>
+
