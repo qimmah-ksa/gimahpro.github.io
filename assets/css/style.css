@@ -192,6 +192,12 @@ footer {
     margin-bottom: 20px;
     text-align: justify; /* لضبط نهايات الأسطر بشكل جمالي */
 }
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* مسافة بين الشعار والنص */
+}
 
-
-
+.brand-name .logo {
+    height: 45px; /* يمكنك تعديل الحجم */
+}
