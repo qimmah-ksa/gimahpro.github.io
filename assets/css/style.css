@@ -198,9 +198,8 @@ footer {
     gap: 10px; /* مسافة بين الشعار والنص */
 }
 
-.brand-name .logo {
-    height: 40px; /* يمكنك تعديل الحجم */
+.logo {
+    max-height: 45px; /* جرّب 45 أو 50 حسب الشكل */
+    width: auto;
 }
-
-
 
