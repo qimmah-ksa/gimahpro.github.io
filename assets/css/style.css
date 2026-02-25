@@ -287,3 +287,9 @@ footer {
 #latest-posts .view-all-btn:hover {
     background: #07405a;
 }
+.section-title {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #d4af37; /* اللون الذهبي */
+}
+
