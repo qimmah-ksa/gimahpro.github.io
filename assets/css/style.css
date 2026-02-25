@@ -288,8 +288,10 @@ footer {
     background: #07405a;
 }
 .section-title {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     padding-bottom: 8px;
-    border-bottom: 3px solid #d4af37; /* اللون الذهبي */
+    border-bottom: 3px solid #d4af37;
+    width: fit-content; /* يجعل الخط بنفس عرض النص */
 }
 
