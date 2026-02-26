@@ -298,13 +298,6 @@ footer {
     margin-top: 40px;
 }
 
-.related-title {
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: #222;
-}
-
 .related-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -416,3 +409,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
