@@ -294,51 +294,6 @@ footer {
     border-bottom: 3px solid #d4af37;
     width: fit-content; /* يجعل الخط بنفس عرض النص */
 }
-.related-posts {
-    margin-top: 40px;
-}
-
-.related-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.related-item {
-    display: block;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #000;
-    transition: 0.2s ease;
-    border: 1px solid #eee;
-}
-
-.related-item h4 {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.related-item:hover {
-    background: #fff;
-    border-color: #ccc;
-    transform: translateY(-4px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .related-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .related-grid {
-        grid-template-columns: 1fr;
-    }
-}
 /* عنوان القسم */
 .related-title {
     font-size: 22px;
@@ -349,13 +304,12 @@ footer {
     display: inline-block;
 }
 
-/* خط ذهبي أطول */
 .related-title::after {
     content: "";
     display: block;
-    width: 120px; /* زوّدته ليكون أطول */
+    width: 120px;
     height: 4px;
-    background-color: #d4af37; /* اللون الذهبي */
+    background-color: #d4af37;
     margin-top: 8px;
     border-radius: 3px;
 }
@@ -376,14 +330,10 @@ footer {
     text-decoration: none;
     color: #000;
     border: 1px solid #eee;
-
-    /* ظل ثابت */
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-
     transition: 0.25s ease;
 }
 
-/* العنوان داخل الصندوق */
 .related-item h4 {
     font-size: 16px;
     margin: 0;
@@ -394,7 +344,7 @@ footer {
 .related-item:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.18);
-    border-color: #d4af37; /* لمسة ذهبية عند المرور */
+    border-color: #d4af37;
 }
 
 /* Responsive */
@@ -409,4 +359,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
