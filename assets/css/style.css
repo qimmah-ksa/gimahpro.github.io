@@ -294,4 +294,56 @@ footer {
     border-bottom: 3px solid #d4af37;
     width: fit-content; /* يجعل الخط بنفس عرض النص */
 }
+.related-posts {
+    margin-top: 40px;
+}
+
+.related-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.related-item {
+    display: block;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease;
+    border: 1px solid #eee;
+}
+
+.related-item h4 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.related-item:hover {
+    background: #fff;
+    border-color: #ccc;
+    transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
