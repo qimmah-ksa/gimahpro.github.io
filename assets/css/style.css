@@ -346,6 +346,34 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* عنوان القسم */
+.related-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+/* خط ذهبي أطول */
+.related-title::after {
+    content: "";
+    display: block;
+    width: 120px; /* زوّدته ليكون أطول */
+    height: 4px;
+    background-color: #d4af37; /* اللون الذهبي */
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+/* شبكة المقالات */
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 /* الصناديق */
 .related-item {
     display: block;
@@ -354,9 +382,7 @@ footer {
     border-radius: 10px;
     text-decoration: none;
     color: #000;
-
-    /* الحد الذهبي الخفيف */
-    border: 1px solid rgba(212, 175, 55, 0.35);
+    border: 1px solid #eee;
 
     /* ظل ثابت */
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
@@ -364,13 +390,29 @@ footer {
     transition: 0.25s ease;
 }
 
+/* العنوان داخل الصندوق */
+.related-item h4 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
 /* تأثير عند المرور */
 .related-item:hover {
     transform: translateY(-4px);
-
-    /* حد ذهبي أوضح عند المرور */
-    border-color: #d4af37;
-
-    /* ظل أقوى */
     box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    border-color: #d4af37; /* لمسة ذهبية عند المرور */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
 }
