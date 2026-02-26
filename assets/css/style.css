@@ -346,4 +346,71 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* عنوان القسم */
+.related-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/* الخط الذهبي تحت العنوان */
+.related-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d4af37; /* اللون الذهبي */
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+/* شبكة المقالات */
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* الصناديق */
+.related-item {
+    display: block;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #eee;
+    transition: 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* ظل خفيف */
+}
+
+/* العنوان داخل الصندوق */
+.related-item h4 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* تأثير عند المرور */
+.related-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15); /* ظل أقوى */
+    border-color: #d4af37; /* لمسة ذهبية عند المرور */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
