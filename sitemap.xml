@@ -89,5 +89,17 @@
     <priority>0.5</priority>
   </url>
 
+<url>
+    <loc>https://www.gimahpro.com/about.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gimahpro.com/contact.html</loc>
+    <priority>0.5</priority>
+  </url>
+ 
+
 </urlset>
+
 
