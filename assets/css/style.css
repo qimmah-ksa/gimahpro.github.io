@@ -403,5 +403,33 @@ footer {
     height: 22px;
     fill: white;
 }
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icons .icon {
+    width: 42px;
+    height: 42px;
+    background: #d4af37; /* الذهبي */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.social-icons .icon svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
+.social-icons .icon:hover {
+    background: #b8922a; /* ذهبي أغمق */
+    transform: scale(1.08);
+}
+
 
 
