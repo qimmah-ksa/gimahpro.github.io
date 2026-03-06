@@ -381,4 +381,27 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.contact-details .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    background: #d4af37; /* الذهبي */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.icon svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
 
