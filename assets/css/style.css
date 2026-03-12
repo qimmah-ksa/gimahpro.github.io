@@ -984,6 +984,18 @@ footer {
     direction: rtl;
     text-align: right;
 }
+/* إصلاح اتجاه صفحة من نحن واتصل بنا */
+.about-page,
+.contact-page,
+.about-section,
+.contact-section {
+    direction: rtl;
+    text-align: right;
+}
 
-
-
+/* إصلاح أي عناصر داخلية */
+.about-page *,
+.contact-page * {
+    direction: rtl;
+    text-align: right;
+}
