@@ -993,3 +993,71 @@ footer {
     direction: rtl;
     text-align: right;
 }
+/* ============================
+   RTL Fix (Safe & Clean)
+   ============================ */
+.about-page {
+    direction: rtl;
+    text-align: right;
+}
+
+.contact-page {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ============================
+   Article Layout Fix
+   ============================ */
+.article-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.article-content {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ============================
+   Featured Image Fix
+   ============================ */
+.featured-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* ============================
+   Values Grid Fix
+   ============================ */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.value-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+/* ============================
+   CTA Box Fix
+   ============================ */
+.cta-box {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+}
