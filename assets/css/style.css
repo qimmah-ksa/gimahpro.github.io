@@ -595,6 +595,113 @@ footer {
             background: var(--accent-gold);
             color: var(--primary-navy);
         }
+/* ===========================
+   Contact Page – Form Messages
+=========================== */
+
+#form-success,
+#form-error {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#form-success {
+    background: #e8f7ef;
+    border: 1px solid #0a7c3a;
+    color: #0a7c3a;
+}
+
+#form-error {
+    background: #fdeaea;
+    border: 1px solid #b30000;
+    color: #b30000;
+}
+
+/* ===========================
+   Contact Details Section
+=========================== */
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details .info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-details .icon svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--primary-navy);
+}
+
+/* ===========================
+   Social Links
+=========================== */
+
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a svg,
+.social-links a i {
+    transition: 0.3s;
+}
+
+.social-links a:hover svg,
+.social-links a:hover i {
+    transform: scale(1.15);
+}
+
+/* ===========================
+   Latest Posts Section
+=========================== */
+
+.post-thumb {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.post-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-title {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: var(--primary-navy);
+}
+
+.post-excerpt {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: var(--accent-gold);
+    font-weight: 700;
+}
 
 
 
