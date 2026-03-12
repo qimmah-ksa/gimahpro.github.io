@@ -850,6 +850,25 @@ footer {
 .legal-page-container ul li {
     margin-bottom: 8px;
 }
+header {
+    direction: rtl;
+}
+
+header nav {
+    direction: rtl;
+}
+
+header .brand-name {
+    direction: rtl;
+}
+footer {
+    direction: rtl;
+    text-align: right;
+}
+
+.footer-main {
+    direction: rtl;
+}
 
 
 
