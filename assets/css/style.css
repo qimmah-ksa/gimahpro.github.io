@@ -702,6 +702,49 @@ footer {
     color: var(--accent-gold);
     font-weight: 700;
 }
+/* ===========================
+   Legal Pages Styling
+=========================== */
+
+.legal-page-container {
+    max-width: 850px;
+    margin: 20px auto !important;
+    padding: 0 20px;
+}
+
+.legal-page-container section {
+    margin-bottom: 0 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.legal-page-container h1 {
+    color: var(--primary-navy);
+    font-size: 2rem;
+    margin-bottom: 15px !important;
+    border-bottom: 3px solid var(--accent-gold);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.legal-page-container h3 {
+    color: var(--primary-navy);
+    margin-top: 15px !important;
+    margin-bottom: 5px !important;
+    font-size: 1.3rem;
+}
+
+.legal-page-container p {
+    color: #444;
+    line-height: 1.6 !important;
+    margin-bottom: 10px !important;
+    text-align: justify;
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
 
 
