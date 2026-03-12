@@ -965,6 +965,25 @@ footer {
     direction: rtl;
     text-align: right;
 }
+/* إصلاح اتجاه الصفحات القانونية */
+.legal-page-container {
+    direction: rtl;
+    text-align: right;
+}
+
+.legal-page-container section {
+    direction: rtl;
+}
+
+.legal-page-container h1,
+.legal-page-container h2,
+.legal-page-container h3,
+.legal-page-container p,
+.legal-page-container ul,
+.legal-page-container li {
+    direction: rtl;
+    text-align: right;
+}
 
 
 
