@@ -951,6 +951,20 @@ footer {
 .read-more:hover {
     color: var(--primary-navy);
 }
+/* إصلاح اتجاه كروت المدونة */
+.blog-grid {
+    direction: rtl;
+}
+
+.blog-card {
+    direction: rtl;
+    text-align: right;
+}
+
+.blog-card-content {
+    direction: rtl;
+    text-align: right;
+}
 
 
 
