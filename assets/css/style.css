@@ -1140,5 +1140,31 @@ footer {
     opacity: 1;
     transform: scale(1.15);
 }
+/* إصلاح تمدد عمود معلومات التواصل في الفوتر */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    max-width: 300px; /* يمنع تمدد العمود */
+    text-align: right;
+}
+
+.footer-col .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.footer-col .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
 
 
