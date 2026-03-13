@@ -1194,3 +1194,31 @@ footer {
 .social-links a:hover svg {
     fill: #ffffff; /* الأيقونة تصبح بيضاء */
 }
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d4af37; /* الإطار الذهبي */
+    border-radius: 50%; /* دائرة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff; /* خلفية بيضاء */
+    transition: 0.3s;
+}
+
+.social-links a svg {
+    width: 22px;
+    height: 22px;
+    fill: #000000; /* الأيقونة سوداء */
+    transition: 0.3s;
+}
+
+/* تأثير التمرير */
+.social-links a:hover {
+    background: #d4af37; /* الخلفية تصبح ذهبية */
+    border-color: #d4af37;
+}
+
+.social-links a:hover svg {
+    fill: #ffffff; /* الأيقونة تصبح بيضاء */
+}
