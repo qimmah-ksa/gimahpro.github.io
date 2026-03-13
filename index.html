@@ -150,89 +150,97 @@ canonical: "https://www.gimahpro.com/"
         <h2>تواصل معنا</h2>
     </div>
 
-    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="05394035-d52f-437d-a669-ccb9e4625b93">
+    <div class="contact-container">
 
-        <div class="form-group">
-            <input type="text" name="name" placeholder="الاسم الكريم / اسم الشركة" required>
+        <!-- عمود الفورم -->
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="05394035-d52f-437d-a669-ccb9e4625b93">
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="الاسم الكريم / اسم الشركة" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            </div>
+
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="كيف يمكننا مساعدتكم؟" required></textarea>
+            </div>
+
+            <button type="submit" class="main-btn w-full">إرسال الطلب</button>
+
+            <div id="form-success" style="display:none; margin-top:20px; padding:15px; background:#e8f7ef; border:1px solid #0a7c3a; color:#0a7c3a; border-radius:8px; font-weight:600; text-align:center;">
+                تم إرسال طلبك بنجاح، سنقوم بالتواصل معكم قريبًا.
+            </div>
+        </form>
+
+        <!-- عمود معلومات التواصل -->
+        <div class="contact-details">
+
+            <div class="info-item">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
+                    </svg>
+                </div>
+                <span>الرياض – حي الياسمين</span>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.2-.2.5-.3.8-.2 1 .3 2 .5 3.1.5.4 0 .7.3.7.7v3c0 .4-.3.7-.7.7C9.9 20 4 14.1 4 6.7c0-.4.3-.7.7-.7h3c.4 0 .7.3.7.7 0 1.1.2 2.1.5 3.1.1.3 0 .6-.2.8l-1.9 1.9z"/>
+                    </svg>
+                </div>
+                <span>+966 533221169</span>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </div>
+                <span>contact@gimahpro.com</span>
+            </div>
+
+            <!-- أيقونات التواصل الاجتماعي داخل القسم الصحيح -->
+            <div class="social-links">
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@sahab_art_link" target="_blank" title="تيك توك">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
+                        <path d="M12.5 2c1.2 0 2.3.5 3.1 1.3.8.8 1.3 1.9 1.3 3.1v7.4c0 2.9-2.4 5.2-5.2 5.2S6.5 16.7 6.5 13.8s2.4-5.2 5.2-5.2c.3 0 .6 0 .9.1V2h-.1z"/>
+                    </svg>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sahab_art_link" target="_blank" title="إنستغرام">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
+                        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                </a>
+
+                <!-- X -->
+                <a href="https://twitter.com" target="_blank" title="إكس">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
+                        <path d="M4 4l7 7-7 9h3l5-6 5 6h3l-7-9 7-7h-3l-5 5-5-5H4z"/>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" title="لينكد إن">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
+                        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.7 2.6 4.7 6V24h-4v-8.5c0-2 0-4.5-2.8-4.5-2.8 0-3.2 2.2-3.2 4.3V24h-4V8z"/>
+                    </svg>
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="form-group">
-            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        </div>
-
-        <div class="form-group">
-            <textarea name="message" rows="5" placeholder="كيف يمكننا مساعدتكم؟" required></textarea>
-        </div>
-
-        <button type="submit" class="main-btn w-full">إرسال الطلب</button>
-
-        <div id="form-success" style="display:none; margin-top:20px; padding:15px; background:#e8f7ef; border:1px solid #0a7c3a; color:#0a7c3a; border-radius:8px; font-weight:600; text-align:center;">
-            تم إرسال طلبك بنجاح، سنقوم بالتواصل معكم قريبًا.
-        </div>
-    </form>
-</section>
-<div id="form-error" class="form-error">
-    حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.
-</div>
-</form>
-
-<div class="contact-details">
-
-    <div class="info-item">
-        <div class="icon">
-            <svg viewBox="0 0 24 24">
-                <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
-            </svg>
-        </div>
-        <span>الرياض – حي الياسمين</span>
     </div>
-
-    <div class="info-item">
-        <div class="icon">
-            <svg viewBox="0 0 24 24">
-                <path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.2-.2.5-.3.8-.2 1 .3 2 .5 3.1.5.4 0 .7.3.7.7v3c0 .4-.3.7-.7.7C9.9 20 4 14.1 4 6.7c0-.4.3-.7.7-.7h3c.4 0 .7.3.7.7 0 1.1.2 2.1.5 3.1.1.3 0 .6-.2.8l-1.9 1.9z"/>
-            </svg>
-        </div>
-        <span>+966 533221169</span>
-    </div>
-
-    <div class="info-item">
-        <div class="icon">
-            <svg viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-        </div>
-        <span>contact@gimahpro.com</span>
-    </div>
-
-</div>
-
-<div class="social-links">
-    <a href="https://www.tiktok.com/@sahab_art_link" target="_blank" title="تيك توك">
-   <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
-<path d="M12.5 2c1.2 0 2.3.5 3.1 1.3.8.8 1.3 1.9 1.3 3.1v7.4c0 2.9-2.4 5.2-5.2 5.2S6.5 16.7 6.5 13.8s2.4-5.2 5.2-5.2c.3 0 .6 0 .9.1V2h-.1z"/>
-</svg>
-    </a>
-
-    <a href="https://www.instagram.com/sahab_art_link" target="_blank" title="إنستغرام">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
-<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-</svg>
-    </a>
-
-    <a href="https://twitter.com" target="_blank" title="إكس">
-     <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
-<path d="M4 4l7 7-7 9h3l5-6 5 6h3l-7-9 7-7h-3l-5 5-5-5H4z"/>
-</svg>
-    </a>
-
-    <a href="https://www.linkedin.com" target="_blank" title="لينكد إن">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="#d4af37">
-<path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.7 2.6 4.7 6V24h-4v-8.5c0-2 0-4.5-2.8-4.5-2.8 0-3.2 2.2-3.2 4.3V24h-4V8z"/>
-</svg>
-    </a>
-</div>
 </section>
 <section id="latest-posts" class="latest-posts">
     <div class="container">
@@ -276,4 +284,5 @@ canonical: "https://www.gimahpro.com/"
         </div>
     </div>
 </section>
+
 
