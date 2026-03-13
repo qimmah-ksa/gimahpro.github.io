@@ -10,32 +10,34 @@ canonical: "https://www.gimahpro.com/blog/"
     <p>رؤى استشارية ومقالات تخصصية لتطوير أعمالك</p>
 </section>
 
-<main class="blog-grid">
+<div class="container">
+    <main class="blog-grid">
 
-{% for post in site.posts %}
-<article class="blog-card">
+    {% for post in site.posts %}
+    <article class="blog-card">
 
-    <img src="{{ post.image }}" 
-         alt="{{ post.title }}" 
-         class="blog-card-img">
+        <img src="{{ post.image }}" 
+             alt="{{ post.title }}" 
+             class="blog-card-img">
 
-    <div class="blog-card-content">
-        <span class="blog-category">{{ post.category }}</span>
+        <div class="blog-card-content">
+            <span class="blog-category">{{ post.category }}</span>
 
-        <h3 class="blog-card-title">
-            {{ post.title }}
-        </h3>
+            <h3 class="blog-card-title">
+                {{ post.title }}
+            </h3>
 
-        <p class="blog-card-excerpt">
-            {{ post.description }}
-        </p>
+            <p class="blog-card-excerpt">
+                {{ post.description }}
+            </p>
 
-        <a href="{{ post.url }}" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
+            <a href="{{ post.url }}" class="read-more">
+                اقرأ المقال الكامل ←
+            </a>
+        </div>
 
-</article>
-{% endfor %}
+    </article>
+    {% endfor %}
 
-</main>
+    </main>
+</div>
