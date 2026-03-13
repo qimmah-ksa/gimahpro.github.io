@@ -6,6 +6,11 @@
     --light-gray: #f8f9fa;
     --transition: all 0.3s ease;
 }
+/* إصلاح اتجاه الموقع بالكامل */
+body {
+    direction: rtl;
+    text-align: right;
+}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Cairo', sans-serif; line-height: 1.8; color: var(--primary-navy); background-color: var(--white); scroll-behavior: smooth; }
@@ -1135,4 +1140,5 @@ footer {
     opacity: 1;
     transform: scale(1.15);
 }
+
 
