@@ -4,185 +4,38 @@ title: "مدونة قمة التميز"
 description: "مدونة قمة التميز تقدم محتوى احترافي في الاستشارات المالية والإدارية وتطوير الأعمال."
 canonical: "https://www.gimahpro.com/blog/"
 ---
-    <section class="blog-header">
-        <h1>مدونة قمة التميز</h1>
-        <p>رؤى استشارية ومقالات تخصصية لتطوير أعمالك</p>
-    </section>
 
-    <main class="blog-grid">
-        
-       <article class="blog-card">
-    <img src="/assets/images/financial-analysis-decisions.jpg"
-     alt="أهمية التحليل المالي في اتخاذ القرارات الإدارية"
-     class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">استشارات مالية</span>
-        <h3 class="blog-card-title">أهمية التحليل المالي في اتخاذ القرارات الإدارية</h3>
-        <p class="blog-card-excerpt">تعرف على كيفية تحويل الأرقام الصماء إلى قرارات استراتيجية تضمن نمو شركتك...</p>
-        <a href="financial-analysis-decisions.html" class="read-more">اقرأ المقال الكامل ←</a>
-    </div>
-</article>
+<section class="blog-header">
+    <h1>مدونة قمة التميز</h1>
+    <p>رؤى استشارية ومقالات تخصصية لتطوير أعمالك</p>
+</section>
 
-       <article class="blog-card">
-    <img src="/assets/images/saudi-corporate-identity.jpg"
-         alt="بناء هوية مؤسسية قوية في السوق السعودي"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">تطوير الأعمال</span>
-        <h3 class="blog-card-title">
-            كيف تبني هوية مؤسسية قوية في السوق السعودي؟
-        </h3>
-        <p class="blog-card-excerpt">
-            دليل شامل حول بناء العلامة التجارية التي تعكس قيم التميز والاحترافية...
-        </p>
-        <a href="saudi-corporate-identity.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
+<main class="blog-grid">
 
-      <article class="blog-card">
-    <img src="/assets/images/institutional-performance-strategies.jpg"
-         alt="استراتيجيات تحسين الأداء المؤسسي لعام 2026"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">إدارة مؤسسية</span>
-        <h3 class="blog-card-title">
-            استراتيجيات تحسين الأداء المؤسسي لعام 2026
-        </h3>
-        <p class="blog-card-excerpt">
-            استعراض لأحدث النظم الإدارية التي تساعد المنشآت على التكيف مع التحول الرقمي...
-        </p>
-        <a href="institutional-performance-strategies.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
-
-      <article class="blog-card">
-    <img src="/assets/images/financial-process-automation.jpg"
-         alt="أتمتة العمليات المالية"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">استشارات تقنية</span>
-        <h3 class="blog-card-title">
-            أتمتة العمليات المالية: كيف توفر وقتك وجهدك؟
-        </h3>
-        <p class="blog-card-excerpt">
-            استعراض لأحدث الأدوات الرقمية التي تساعد في إدارة التدفقات النقدية آلياً وبدقة متناهية...
-        </p>
-        <a href="financial-process-automation.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
-        
+{% for post in site.posts %}
 <article class="blog-card">
-    <img src="/assets/images/systems-development-efficiency.jpg"
-         alt="تطوير النظم الإدارية"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">تطوير مؤسسي</span>
-        <h3 class="blog-card-title">
-            تطوير النظم الإدارية: المفتاح السحري لرفع كفاءة المنشآت
-        </h3>
-        <p class="blog-card-excerpt">
-            كيف تساهم هيكلة الإجراءات وتطوير الأنظمة الداخلية في تقليل الهدر وزيادة الإنتاجية...
-        </p>
-        <a href="systems-development-efficiency.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
 
-<article class="blog-card">
-    <img src="/assets/images/operational-risk-management.jpg"
-         alt="إدارة المخاطر التشغيلية قمة التميز"
+    <img src="{{ post.image }}" 
+         alt="{{ post.title }}" 
          class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">إدارة مخاطر</span>
-        <h3 class="blog-card-title">
-            دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت
-        </h3>
-        <p class="blog-card-excerpt">
-            كيف تحدد التهديدات المحتملة لأعمالك وتضع خططاً استباقية لضمان استمرارية العمل...
-        </p>
-        <a href="operational-risk-management.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
 
-       <article class="blog-card">
-    <img src="/assets/images/digital-transformation-saudi.jpg"
-         alt="التحول الرقمي"
-         class="blog-card-img">
     <div class="blog-card-content">
-        <span class="blog-category">تكنولوجيا الإدارة</span>
-        <h3 class="blog-card-title">
-            التحول الرقمي في الشركات السعودية: مواكبة رؤية 2030
-        </h3>
-        <p class="blog-card-excerpt">
-            استراتيجيات دمج التقنيات الحديثة لتعزيز التنافسية بما يتوافق مع التحول الوطني الشامل...
-        </p>
-        <a href="digital-transformation-saudi.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
+        <span class="blog-category">{{ post.category }}</span>
 
-       <article class="blog-card">
-    <img src="/assets/images/human-capital-management.jpg"
-         alt="الموارد البشرية"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">إدارة الموارد البشرية</span>
         <h3 class="blog-card-title">
-            إدارة رأس المال البشري: كيف تحافظ على الكفاءات؟
+            {{ post.title }}
         </h3>
-        <p class="blog-card-excerpt">
-            أساليب حديثة لاستقطاب المواهب والحفاظ عليها في بيئة عمل سعودية تنافسية وجاذبة...
-        </p>
-        <a href="human-capital-management.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
 
-    <article class="blog-card">
-    <img src="/assets/images/sme-financial-sustainability.jpg"
-         alt="التخطيط المالي للمشاريع الصغيرة والمتوسطة"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">الاستشارات المالية</span>
-        <h3 class="blog-card-title">
-            التخطيط المالي للمشاريع الصغيرة والمتوسطة: من التأسيس إلى الاستدامة
-        </h3>
         <p class="blog-card-excerpt">
-            استراتيجيات عمليّة لتنظيم الميزانية وإدارة التدفقات النقدية لضمان بقاء ونمو منشأتك في السوق السعودي...
+            {{ post.description }}
         </p>
-        <a href="sme-financial-sustainability.html" class="read-more">
-            اقرأ المقال الكامل ←
-        </a>
-    </div>
-</article>
 
-        <article class="blog-card">
-    <img src="/assets/images/leadership-in-crisis.jpg"
-         alt="القيادة الإدارية"
-         class="blog-card-img">
-    <div class="blog-card-content">
-        <span class="blog-category">القيادة والإدارة</span>
-        <h3 class="blog-card-title">
-            مهارات القيادة الإدارية في الأزمات: كيف تقود منشأتك لبر الأمان؟
-        </h3>
-        <p class="blog-card-excerpt">
-            كيفية الحفاظ على استقرار الفريق واتخاذ القرارات الاستراتيجية الحاسمة في أوقات التحديات الكبرى...
-        </p>
-        <a href="leadership-in-crisis.html" class="read-more">
+        <a href="{{ post.url }}" class="read-more">
             اقرأ المقال الكامل ←
         </a>
     </div>
+
 </article>
-        
-    </main>
+{% endfor %}
+
+</main>
