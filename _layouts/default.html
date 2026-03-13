@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>
+<html lang="ar" dir="rtl"> <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.png" type="image/png">
-  <!-- ملف CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | قمة التميز</title>
+  
+  <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
 
-  <!-- Google Analytics -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNF0DYEEFT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,14 +17,13 @@
     gtag('config', 'G-RNF0DYEEFT');
   </script>
 
-  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "قمة التميز للاستشارات المالية والإدارية",
-    "url": "https://www.gimahpro.com/",
-    "logo": "https://www.gimahpro.com/assets/images/gimahpro-logo.png",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "logo": "{{ '/assets/images/gimahpro-logo.png' | relative_url }}",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+966533221169",
@@ -46,21 +45,19 @@
     ]
   }
   </script>
-
 </head>
 
 <body>
 
   {% include header.html %}
 
- <div class="page-content">
-  {{ content }}
-</div>
+  <main class="page-content">
+    {{ content }}
+  </main>
 
   {% include footer.html %}
 
-  <!-- ملف JavaScript -->
-  <script src="/assets/js/main.js"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 </body>
 </html>
