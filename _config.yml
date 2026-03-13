@@ -1,0 +1,22 @@
+# إعدادات موقع قمة التميز
+title: قمة التميز للاستشارات
+email: info@gimahpro.com
+description: >- # وصف الموقع لمحركات البحث
+  مؤسسة قمة التميز للاستشارات المالية والإدارية، نقدم حلولاً احترافية
+  لدعم نمو الشركات وتحقيق رؤية السعودية 2030.
+
+baseurl: "" # اتركه فارغاً إذا كان الموقع في المجلد الرئيسي
+url: "https://www.gimahpro.com" # رابط موقعك الفعلي
+
+# إعدادات الروابط (لتحل مشكلة المقالات القديمة)
+permalink: /:title.html
+
+# استبعاد الملفات غير الضرورية
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
