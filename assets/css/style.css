@@ -1223,25 +1223,15 @@ footer {
     fill: #ffffff; /* الأيقونة تصبح بيضاء */
 }
 .blog-header {
-    background: #6ec6ff;
+    background: linear-gradient(135deg, #0a1a33, #123a70);
     padding: 60px 20px;
     text-align: center;
     border-radius: 12px;
-    color: #ffffff;
+    color: #d4af37; /* النص الذهبي */
     margin-bottom: 40px;
 }
 
-.blog-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    color: #d4af37; /* ذهبي */
-}
-
+.blog-header h1,
 .blog-header p {
-    font-size: 18px;
-    opacity: 0.95;
-    font-weight: 300;
     color: #d4af37; /* ذهبي */
 }
-
