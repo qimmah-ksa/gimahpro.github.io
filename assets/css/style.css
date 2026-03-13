@@ -1105,4 +1105,34 @@ footer {
     margin-top: 15px;
     font-weight: bold;
 }
+.footer-main {
+    direction: rtl;
+    text-align: right;
+}
+
+.footer-col {
+    text-align: right;
+}
+
+.footer-col .info-item {
+    justify-content: flex-start;
+}
+.footer-col .social-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.footer-col .social-links a svg {
+    width: 26px;
+    height: 26px;
+    fill: #d4af37;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.footer-col .social-links a:hover svg {
+    opacity: 1;
+    transform: scale(1.15);
+}
 
