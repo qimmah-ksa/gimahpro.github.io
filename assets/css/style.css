@@ -1223,11 +1223,11 @@ footer {
     fill: #ffffff; /* الأيقونة تصبح بيضاء */
 }
 .blog-header {
-    background: #4da3ff; /* أزرق فاتح */
+    background: #6ec6ff;
     padding: 60px 20px;
     text-align: center;
     border-radius: 12px;
-    color: #ffffff; /* نص أبيض */
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -1244,3 +1244,4 @@ footer {
     font-weight: 300;
     color: #ffffff; /* نص أبيض */
 }
+
