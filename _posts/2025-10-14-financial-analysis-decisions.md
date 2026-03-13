@@ -3,7 +3,7 @@ layout: post
 title: "أهمية التحليل المالي في اتخاذ القرارات الإدارية الاستراتيجية"
 description: "تعرف على أهمية التحليل المالي في اتخاذ القرارات الإدارية مع قمة التميز للاستشارات المالية والإدارية."
 image: "/assets/images/financial-analysis-decisions.jpg"
-categories: "استشارات مالية"
+category: "استشارات مالية"
 permalink: /blog/financial-analysis-decisions.html
 ---
 
