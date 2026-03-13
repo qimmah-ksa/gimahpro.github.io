@@ -1319,3 +1319,30 @@ footer {
         grid-template-columns: 1fr; /* كارت واحد فقط في العرض على الجوال */
     }
 }
+/* تنسيق المقالة الأولى والمحتوى الطويل */
+. digital-transformation -container {
+    max-width: 900px; /* العرض المثالي للقراءة */
+    margin: 50px auto; /* توسيط الحاوية وترك مسافة من الأعلى */
+    padding: 0 25px;   /* مسافة أمان جانبية للجوال */
+    background: #ffffff;
+}
+. digital-transformation -container h1 {
+    color: var(--primary-navy);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--accent-gold);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+. digital-transformation -container h3 {
+    color: var(--primary-navy);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+. digital-transformation -container p {
+    color: #444;
+    line-height: 1.9; /* مسافة بين الأسطر لراحة العين */
+    margin-bottom: 20px;
+    text-align: justify; /* لضبط نهايات الأسطر بشكل جمالي */
+}
+
