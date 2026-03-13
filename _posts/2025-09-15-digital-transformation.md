@@ -9,10 +9,12 @@ category: "تكنولوجيا الإدارة"
 <article class="post-wrapper">
     <div class="post-container">
         
-        <header class="post-header">
-            <span class="post-category-tag">تكنولوجيا الإدارة | قمة التميز</span>
-            <h1 class="post-title">{{ page.title }}</h1>
-        </header>
+        <div class="post-meta-box">
+            <span class="meta-category">{{ page.category }}</span>
+            <span class="meta-brand">قمة التميز</span>
+        </div>
+
+        <h1 class="main-article-title">{{ page.title }}</h1>
 
         <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-featured-image">
 
@@ -62,7 +64,7 @@ category: "تكنولوجيا الإدارة"
             <div class="post-cta-box">
                 <h3>هل أنت مستعد للانطلاق نحو المستقبل الرقمي؟</h3>
                 <p>دعنا نساعدك في رسم ملامح تحولك الرقمي بنجاح وتميز.</p>
-                <a href="/#contact" class="main-btn btn-gold">احصل على استشارة الآن</a>
+                <a href="/#contact" class="btn-gold" style="text-decoration: none; background: #D4AF37; color: #002147; padding: 12px 30px; border-radius: 50px; font-weight: bold; display: inline-block;">احصل على استشارة الآن</a>
             </div>
         </div>
 
