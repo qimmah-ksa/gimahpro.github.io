@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title: "التحول الرقمي في الشركات السعودية: مواكبة رؤية 2030"
-description: "تعرف على أهمية التحول الرقمي للشركات السعودية، وكيف يمكن للتقنيات الحديثة دعم الكفاءة والابتكار، وتحقيق التوافق مع مستهدفات رؤية السعودية 2030."
+# ضع هنا الرابط القديم بالكامل كما كان (مثال)
+permalink: /digital-transformation-saudi.html 
 image: "/assets/images/digital-transformation-saudi.jpg"
 category: "تكنولوجيا الإدارة"
 ---
