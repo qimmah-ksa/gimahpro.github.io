@@ -1,26 +1,30 @@
-/* ============================
-   VARIABLES & BASE RESET
-============================ */
+/* ==========================================================================
+   1. المتغيرات والإعدادات العامة
+   ========================================================================== */
 :root {
     --primary-navy: #002147;
     --accent-gold: #D4AF37;
     --white: #ffffff;
     --light-gray: #f8f9fa;
     --transition: all 0.3s ease;
+    --primary-pink: #ff85a2; /* اللون الوردي لسحاب */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-    font-family: 'Cairo', sans-serif;
-    line-height: 1.8;
-    color: var(--primary-navy);
-    background-color: var(--white);
-    scroll-behavior: smooth;
+
+body { 
+    font-family: 'Cairo', sans-serif; 
+    line-height: 1.8; 
+    color: var(--primary-navy); 
+    background-color: var(--white); 
+    scroll-behavior: smooth; 
+    direction: rtl; /* توحيد الاتجاه للموقع كاملاً */
+    text-align: right;
 }
 
-/* ============================
-   HEADER
-============================ */
+/* ==========================================================================
+   2. الهيدر (Header)
+   ========================================================================== */
 header {
     background-color: var(--primary-navy);
     padding: 15px 5%;
@@ -31,318 +35,134 @@ header {
     top: 0;
     z-index: 1000;
     border-bottom: 3px solid var(--accent-gold);
-    direction: rtl;
 }
 
-.brand-name {
-    color: var(--accent-gold);
-    font-size: 26px;
-    font-weight: 900;
-    text-decoration: none;
+.brand-name { 
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--accent-gold); 
+    font-size: 26px; 
+    font-weight: 900; 
+    text-decoration: none; 
 }
 
 .logo { max-height: 45px; width: auto; }
 
-nav { display: flex; align-items: center; gap: 20px; direction: rtl; }
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: var(--transition);
-}
+nav { display: flex; align-items: center; gap: 20px; }
+nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 15px; transition: var(--transition); }
 nav a:hover { color: var(--accent-gold); }
 
-nav a.nav-cta {
-    background-color: var(--accent-gold);
-    color: var(--primary-navy);
-    padding: 8px 22px;
-    border-radius: 6px;
+nav a.nav-cta { 
+    background-color: var(--accent-gold); 
+    color: var(--primary-navy); 
+    padding: 8px 22px; 
+    border-radius: 6px; 
     font-weight: 700;
 }
-nav a.nav-cta:hover { background-color: var(--white); }
 
-/* ============================
-   HERO
-============================ */
-.hero {
-    background: linear-gradient(rgba(0,33,71,0.75), rgba(0,33,71,0.75)),
-    url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* ==========================================================================
+   3. العناصر المكررة (Global Components)
+   ========================================================================== */
+section { padding: 90px 10%; }
+
+.section-header, .section-title {
     text-align: center;
-    color: var(--white);
-    padding: 20px;
+    margin-bottom: 45px;
+    display: block;
+    margin: 0 auto 40px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--accent-gold);
+    width: fit-content;
 }
 
-.hero h1 {
-    font-size: clamp(2.2rem, 6vw, 3.8rem);
-    color: var(--accent-gold);
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 850px;
-    font-size: 1.3rem;
-    margin-bottom: 35px;
-}
-
-/* ============================
-   BUTTONS
-============================ */
-.main-btn {
+.main-btn, .btn-gold {
     background: var(--accent-gold);
     color: var(--primary-navy);
-    padding: 16px 45px;
+    padding: 15px 40px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
+    display: inline-block;
     transition: var(--transition);
-    font-size: 1.1rem;
     border: none;
     cursor: pointer;
 }
-.main-btn:hover {
-    transform: translateY(-3px);
-    background: var(--white);
+
+.main-btn:hover, .btn-gold:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+    background: var(--white); 
 }
 
-/* ============================
-   SECTIONS
-============================ */
-section { padding: 90px 10%; }
-.bg-light { background-color: var(--light-gray); }
-
-.section-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-.section-header h2 {
-    font-size: 2.8rem;
-    color: var(--primary-navy);
-    position: relative;
-    padding-bottom: 15px;
-}
-.section-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 4px;
-    background: var(--accent-gold);
-}
-
-/* ============================
-   GRID & CARDS
-============================ */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: var(--light-gray);
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    transition: var(--transition);
-    border: 1px solid #eee;
-}
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    border-color: var(--accent-gold);
-}
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-.card-body { padding: 25px; }
-
-/* ============================
-   ABOUT PAGE
-============================ */
-.about-page {
-    direction: rtl;
-    text-align: right;
-}
-
-.article-container {
+/* ==========================================================================
+   4. المدونة والصفحات القانونية (Cleaned)
+   ========================================================================== */
+.legal-page-container, .article-container {
     max-width: 900px;
-    margin: auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.featured-image {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
+.legal-page-container h1, .article-content h1 {
+    color: var(--primary-navy);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--accent-gold);
+    padding-bottom: 10px;
 }
 
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin: 30px 0;
-}
-
-.value-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-    text-align: center;
-}
-
-/* CTA BOX */
+/* صندوق الدعوة الموحد - الداكن الفخم */
 .cta-box {
     background: #0a2a43;
     color: #fff;
-    padding: 35px;
-    border-radius: 12px;
+    padding: 40px;
+    border-radius: 15px;
     text-align: center;
     max-width: 900px;
-    margin: 40px auto;
-    border: 2px solid var(--accent-gold);
-}
-.cta-box h3 { color: var(--accent-gold); }
-.cta-box .btn-gold {
-    background: var(--accent-gold);
-    color: #0a2a43;
-    padding: 12px 25px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-/* ============================
-   CONTACT PAGE
-============================ */
-.contact-page {
-    direction: rtl;
-    text-align: right;
-}
-
-.contact-container {
-    max-width: 1100px;
     margin: 50px auto;
-    padding: 0 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    border: 1px solid var(--accent-gold);
 }
 
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 25px;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-.info-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
+.cta-box h3, .cta-box p { color: #fff; margin-bottom: 20px; }
 
-/* ============================
-   LEGAL PAGES
-============================ */
-.legal-page-container {
-    max-width: 850px;
-    margin: 20px auto;
-    padding: 0 20px;
+/* ==========================================================================
+   5. الفوتر (Footer)
+   ========================================================================== */
+footer { 
+    background: var(--primary-navy); 
+    color: var(--white); 
+    padding: 70px 10% 30px; 
     direction: rtl;
     text-align: right;
 }
 
-.legal-page-container p {
-    text-align: justify;
-    line-height: 1.7;
+.footer-main { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 40px; 
+    padding-bottom: 40px; 
+    border-bottom: 1px solid var(--accent-gold); 
 }
 
-/* ============================
-   BLOG PAGE
-============================ */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    padding: 40px 10%;
-    direction: rtl;
+.social-links { display: flex; gap: 15px; margin-top: 20px; }
+.social-links svg { fill: var(--white); opacity: 0.8; transition: 0.3s; width: 24px; }
+.social-links a:hover svg { opacity: 1; transform: translateY(-3px); fill: var(--accent-gold); }
+
+.copy { text-align: center; padding-top: 30px; opacity: 0.7; font-size: 0.9rem; }
+
+/* ==========================================================================
+   6. الجوال (Responsive)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; padding: 20px; }
+    .grid, .related-grid, .values-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.2rem; }
 }
 
-.blog-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    text-align: right;
-}
-
-/* ============================
-   FOOTER
-============================ */
-footer {
-    background: var(--primary-navy);
-    color: #bbb;
-    padding: 70px 10% 30px;
-    direction: rtl;
-    text-align: right;
-}
-
-.footer-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid var(--accent-gold);
-}
-
-.footer-col h4 {
-    color: var(--white);
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    position: relative;
-}
-.footer-col h4::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--accent-gold);
-}
-
-.copy {
-    text-align: center;
-    padding-top: 30px;
-    color: var(--white);
-    opacity: 0.8;
-}
-
-/* ============================
-   RESPONSIVE
-============================ */
-@media (max-width: 992px) {
-    .contact-container { grid-template-columns: 1fr; }
-    header { flex-direction: column; gap: 15px; }
+.whatsapp-float {
+    position: fixed;
+    width: 60px; height: 60px;
+    bottom: 20px; right: 20px;
+    z-index: 1000;
 }
