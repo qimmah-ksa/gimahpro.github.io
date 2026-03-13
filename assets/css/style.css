@@ -1222,3 +1222,18 @@ footer {
 .social-links a:hover svg {
     fill: #ffffff; /* الأيقونة تصبح بيضاء */
 }
+.blog-hero {
+    background: linear-gradient(135deg, #d4af37, #b8922a);
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 12px;
+}
+.blog-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.blog-hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
