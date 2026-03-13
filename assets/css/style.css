@@ -346,3 +346,49 @@ footer {
     .contact-container { grid-template-columns: 1fr; }
     header { flex-direction: column; gap: 15px; }
 }
+/* ============================
+   HOME PAGE FIXES
+============================ */
+
+/* Hero */
+.hero {
+    padding: 40px 20px;
+    text-align: center;
+}
+.hero h1 {
+    line-height: 1.3;
+}
+
+/* About section */
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+/* Services cards */
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--accent-gold);
+}
+
+/* Why-us cards */
+.card.no-img .card-body {
+    padding: 35px 25px;
+}
+
+/* Vision section */
+.vision-section .card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Latest posts container */
+#latest-posts .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
