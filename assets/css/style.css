@@ -893,9 +893,10 @@ footer {
 .footer-main {
     direction: rtl;
 }
-/* ===========================
-   Blog Page Styling
-=========================== */
+
+/* ==========================================================================
+   تنسيق شبكة المدونة - قمة التميز (نسخة تصغير الكروت)
+   ========================================================================== */
 
 .blog-header {
     text-align: center;
@@ -903,64 +904,72 @@ footer {
 }
 
 .blog-header h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: var(--primary-navy);
     margin-bottom: 10px;
 }
 
 .blog-header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #555;
 }
 
-/* Grid layout */
+/* إصلاح تمدد الشبكة - جعلها 3 أعمدة بدلاً من تمدد الكرت الواحد */
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* إجبار 3 كروت في السطر الواحد */
+    gap: 25px;
     padding: 40px 10%;
+    direction: rtl;
 }
 
-/* Blog card */
+/* تنسيق الكرت وحجمه */
 .blog-card {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
+    direction: rtl;
+    text-align: right;
+    max-width: 100%; /* لضمان عدم خروجه عن العمود */
 }
 
 .blog-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-/* Image */
+/* التحكم في الصور ومنعها من الكبر الزائد */
 .blog-card-img {
     width: 100%;
-    height: 220px;
+    height: 190px; /* تقليل الارتفاع لتصغير الكرت */
     object-fit: cover;
 }
 
-/* Content */
+/* المحتوى الداخلي للكرت */
 .blog-card-content {
-    padding: 20px;
+    padding: 18px;
+    direction: rtl;
+    text-align: right;
 }
 
 .blog-category {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--accent-gold);
     font-weight: 700;
 }
 
 .blog-card-title {
-    font-size: 1.4rem;
+    font-size: 1.15rem; /* تصغير حجم الخط ليتناسب مع الكرت الصغير */
     margin: 10px 0;
     color: var(--primary-navy);
+    line-height: 1.4;
 }
 
 .blog-card-excerpt {
-    color: #555;
-    font-size: 1rem;
+    color: #666;
+    font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -969,25 +978,33 @@ footer {
     color: var(--accent-gold);
     font-weight: 700;
     text-decoration: none;
+    font-size: 0.85rem;
     transition: 0.3s;
 }
 
 .read-more:hover {
     color: var(--primary-navy);
 }
-/* إصلاح اتجاه كروت المدونة */
-.blog-grid {
-    direction: rtl;
+
+/* ==========================================================================
+   التجاوب مع الشاشات المختلفة (Responsive)
+   ========================================================================== */
+
+/* للشاشات المتوسطة (تابلت) - كرتين في السطر */
+@media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 5%;
+    }
 }
 
-.blog-card {
-    direction: rtl;
-    text-align: right;
-}
-
-.blog-card-content {
-    direction: rtl;
-    text-align: right;
+/* للجوال - كرت واحد في السطر */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+    .blog-header h1 { font-size: 2rem; }
 }
 /* إصلاح اتجاه الصفحات القانونية */
 .legal-page-container {
