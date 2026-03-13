@@ -1235,91 +1235,87 @@ footer {
     color: #d4af37; /* ذهبي */
 }
 /* ==========================================================================
-   تنسيق صفحة المدونة - قمة التميز
+   تنسيق شبكة المدونة - قمة التميز
    ========================================================================== */
 
-/* حاوية شبكة المقالات */
+/* الحاوية الأساسية للمدونة */
+.container {
+    max-width: 1200px; /* تحديد عرض المحتوى لكي لا يفرش على كامل الشاشة */
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* شبكة المقالات */
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* توزيع آلي للكروت */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* كروت بجانب بعضها */
     gap: 30px; /* مسافة بين الكروت */
-    padding: 40px 0;
     direction: rtl;
 }
 
 /* كارت المقال */
 .blog-card {
-    background: #fff;
-    border-radius: 12px;
+    background: #ffffff;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
     display: flex;
     flex-direction: column;
-    border: 1px solid #eee;
 }
 
 .blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-10px); /* حركة تفاعلية عند تمرير الماوس */
 }
 
-/* التحكم في حجم الصور */
+/* ضبط حجم الصور ومنع كبرها المزعج */
 .blog-card-img {
     width: 100%;
-    height: 200px; /* توحيد ارتفاع الصور */
-    object-fit: cover; /* لضمان عدم تمدد الصورة */
-    border-bottom: 2px solid var(--accent-gold);
+    height: 220px; /* ارتفاع ثابت وموحد لكل الصور */
+    object-fit: cover; /* لقص الصورة الزائدة والحفاظ على أبعادها */
 }
 
 /* محتوى الكارت */
 .blog-card-content {
-    padding: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    padding: 25px;
+    text-align: right;
 }
 
 .blog-category {
+    display: inline-block;
     color: var(--accent-gold);
-    font-size: 0.85rem;
+    font-size: 13px;
     font-weight: 700;
     margin-bottom: 10px;
-    display: block;
 }
 
 .blog-card-title {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--primary-navy);
-    margin-bottom: 12px;
-    line-height: 1.4;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .blog-card-excerpt {
-    font-size: 0.95rem;
     color: #666;
+    font-size: 15px;
     margin-bottom: 20px;
-    flex-grow: 1; /* لتوحيد نهايات الكروت */
 }
 
-/* رابط اقرأ المزيد */
+/* زر اقرأ المزيد */
 .read-more {
     color: var(--primary-navy);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 0.9rem;
-    display: inline-block;
-    transition: color 0.3s;
+    font-weight: 800;
+    font-size: 14px;
+    border-bottom: 2px solid var(--accent-gold);
+    padding-bottom: 2px;
 }
 
-.read-more:hover {
-    color: var(--accent-gold);
-}
-
-/* الجوال - كارت واحد في العرض */
-@media (max-width: 480px) {
+/* الجوال */
+@media (max-width: 768px) {
     .blog-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr; /* كارت واحد فقط في العرض على الجوال */
     }
 }
