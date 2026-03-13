@@ -52,6 +52,26 @@ nav a.nav-cta:hover { background-color: var(--white); color: var(--primary-navy)
 .main-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); background: var(--white); }
 .w-full { width: 100%; }
 
+/* زر الهيرو – نسخة ذهبية محسّنة */
+.hero .main-btn {
+    background: #d4af37;        /* الذهبي */
+    color: #002147;             /* الأزرق الداكن */
+    padding: 14px 35px;         /* حجم مناسب */
+    width: auto;                /* يمنع تمدد الزر */
+    border-radius: 50px;        /* شكل احترافي */
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.hero .main-btn:hover {
+    background: #ffffff;        /* أبيض عند التمرير */
+    color: #002147;             /* ثابت */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 /* Sections */
 section { padding: 90px 10%; }
 .bg-light { background-color: var(--light-gray); }
@@ -1085,3 +1105,4 @@ footer {
     margin-top: 15px;
     font-weight: bold;
 }
+
