@@ -1222,18 +1222,23 @@ footer {
 .social-links a:hover svg {
     fill: #ffffff; /* الأيقونة تصبح بيضاء */
 }
-.blog-hero {
-    background: linear-gradient(135deg, #d4af37, #b8922a);
+.blog-header {
+    background: linear-gradient(135deg, #d4af37, #b8922a); /* تدرج ذهبي فاخر */
     padding: 60px 20px;
     text-align: center;
-    color: #ffffff;
     border-radius: 12px;
+    color: #ffffff;
+    margin-bottom: 40px;
 }
-.blog-hero h1 {
+
+.blog-header h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
-.blog-hero p {
+
+.blog-header p {
     font-size: 18px;
-    opacity: 0.9;
+    opacity: 0.95;
+    font-weight: 300;
 }
