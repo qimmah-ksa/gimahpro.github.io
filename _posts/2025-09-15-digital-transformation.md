@@ -10,7 +10,7 @@ canonical: "https://www.gimahpro.com/blog/digital-transformation-saudi.html"
 
 <span class="post-meta">تكنولوجيا الإدارة | قمة التميز</span>
 
-# التحول الرقمي في الشركات السعودية: مواكبة رؤية 2030
+
 
 ![التحول الرقمي في السعودية](/assets/images/digital-transformation-saudi.jpg){:.featured-image}
 
