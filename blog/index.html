@@ -16,22 +16,23 @@ canonical: "https://www.gimahpro.com/blog/"
     {% for post in site.posts %}
     <article class="blog-card">
 
-        <img src="{{ post.image }}" 
+        <img src="{{ post.image | relative_url }}" 
              alt="{{ post.title }}" 
              class="blog-card-img">
 
         <div class="blog-card-content">
+            {% if post.category %}
             <span class="blog-category">{{ post.category }}</span>
+            {% endif %}
 
             <h3 class="blog-card-title">
                 {{ post.title }}
             </h3>
 
             <p class="blog-card-excerpt">
-                {{ post.description }}
-            </p>
+                {{ post.description | truncate: 120 }} </p>
 
-            <a href="{{ post.url }}" class="read-more">
+            <a href="{{ post.url | relative_url }}" class="read-more">
                 اقرأ المقال الكامل ←
             </a>
         </div>
