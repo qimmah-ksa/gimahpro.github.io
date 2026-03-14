@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"> <head>
+<html lang="ar" dir="rtl"> 
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | قمة التميز</title>
   
+  {% if page.url == "/index.html" or page.url == "/" %}
+    <link rel="canonical" href="https://www.gimahpro.com/">
+  {% else %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% endif %}
+
   <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
   <link rel="shortcut icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
-
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNF0DYEEFT"></script>
@@ -18,12 +24,34 @@
   </script>
 
   <script type="application/ld+json">
+  {% if page.layout == "post" %}
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "image": "{{ page.image | absolute_url }}",
+    "author": {
+      "@type": "Organization",
+      "name": "قمة التميز"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "قمة التميز للاستشارات المالية والإدارية",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ '/assets/images/gimahpro-logo.png' | absolute_url }}"
+      }
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}"
+  }
+  {% else %}
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "قمة التميز للاستشارات المالية والإدارية",
-    "url": "{{ site.url }}{{ site.baseurl }}/",
-    "logo": "{{ '/assets/images/gimahpro-logo.png' | relative_url }}",
+    "url": "https://www.gimahpro.com/",
+    "logo": "{{ '/assets/images/gimahpro-logo.png' | absolute_url }}",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+966533221169",
@@ -44,7 +72,9 @@
       "https://www.instagram.com/gimahpro"
     ]
   }
+  {% endif %}
   </script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
