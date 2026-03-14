@@ -18,6 +18,18 @@
     <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
 
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | قمة التميز{% else %}قمة التميز للاستشارات المالية والإدارية{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: 'قمة التميز للاستشارات المالية والإدارية في الرياض. نقدم حلولاً احترافية في تطوير النظم والتخطيط المالي.' }}">
+  <meta property="og:image" content="{{ '/assets/images/og-main.jpg' | absolute_url }}">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta property="twitter:title" content="{% if page.title %}{{ page.title }} | قمة التميز{% else %}قمة التميز للاستشارات المالية والإدارية{% endif %}">
+  <meta property="twitter:description" content="{{ page.description | default: 'قمة التميز للاستشارات المالية والإدارية في الرياض. نقدم حلولاً احترافية في تطوير النظم والتخطيط المالي.' }}">
+  <meta property="twitter:image" content="{{ '/assets/images/og-main.jpg' | absolute_url }}">
+
   <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
   <link rel="shortcut icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
