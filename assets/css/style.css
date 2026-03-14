@@ -135,24 +135,31 @@ section { padding: 90px 10%; }
     opacity: 1; /* تصبح واضحة عند التمرير */
     transform: translateY(-5px); /* ترتفع للأعلى بنعومة */
 }
-/* Footer */
+/* --- قسم الفوتر الموحد (قمة التميز) --- */
+
 footer { 
     background: var(--primary-navy); 
     color: #bbb; 
     padding: 70px 10% 30px; 
+    direction: rtl;
+    text-align: right;
 }
 
-/* 1. التنسيق العام للفوتر (للكمبيوتر والتابلت) */
+/* التنسيق الرئيسي للأعمدة */
 .footer-main { 
-    display: grid; 
-    /* التعديل: نستخدم 4 أعمدة ثابتة للكمبيوتر وتتغير في الجوال */
+    display: grid !important; /* استخدمنا grid لسهولة التحكم بالأعمدة */
     grid-template-columns: repeat(4, 1fr); 
     gap: 40px; 
     padding-bottom: 40px; 
     border-bottom: 1px solid var(--accent-gold); 
+    direction: rtl;
 }
 
-/* 2. تنسيق العناوين مع الخط الذهبي (كما هو لديك) */
+.footer-col {
+    text-align: right;
+}
+
+/* تنسيق العناوين مع الخط الذهبي */
 .footer-col h4 { 
     color: var(--white); 
     margin-bottom: 25px; 
@@ -172,6 +179,7 @@ footer {
     border-radius: 2px;
 }
 
+/* تنسيق الروابط والمعلومات */
 .footer-col a { 
     color: var(--white); 
     text-decoration: none; 
@@ -185,22 +193,61 @@ footer {
     padding-right: 8px; 
 }
 
-/* 3. الحل الجذري للجوال (أضف هذا الجزء في نهاية الملف) */
+.footer-col .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.footer-col .social-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.footer-col .social-links a svg {
+    width: 26px;
+    height: 26px;
+    fill: var(--accent-gold);
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.footer-col .social-links a:hover svg {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* --- نسخة الجوال (أقل من 768px) --- */
 @media (max-width: 768px) {
     .footer-main {
-        /* إجبار العناصر لتكون عمود واحد تحت بعض */
-        grid-template-columns: 1fr !important; 
-        text-align: center; /* اختياري: توسيط النصوص لجمالية الجوال */
+        grid-template-columns: 1fr !important; /* عمود واحد فقط */
+        text-align: center !important;
         gap: 30px;
     }
 
-    .footer-col h4::after {
-        /* توسيط الخط الذهبي تحت العنوان في الجوال إذا اخترت text-align: center */
-        right: 50%;
-        transform: translateX(50%);
+    .footer-col {
+        text-align: center !important;
+        max-width: 100% !important;
     }
 
-    /* منع خروج النصوص الطويلة (مثل الإيميل) عن الشاشة */
+    .footer-col h4::after {
+        right: 50% !important;
+        transform: translateX(50%) !important;
+    }
+
+    .footer-col .info-item {
+        justify-content: center !important; /* توسيط أيقونات الاتصال */
+    }
+
+    .footer-col .social-links {
+        justify-content: center !important; /* توسيط أيقونات السوشيال ميديا */
+    }
+
     .footer-col p, .footer-col a {
         word-break: break-all; 
     }
@@ -917,14 +964,6 @@ header nav {
 header .brand-name {
     direction: rtl;
 }
-footer {
-    direction: rtl;
-    text-align: right;
-}
-
-.footer-main {
-    direction: rtl;
-}
 
 /* ==========================================================================
    تنسيق شبكة المدونة - قمة التميز (نسخة تصغير الكروت)
@@ -1175,62 +1214,7 @@ footer {
     margin-top: 15px;
     font-weight: bold;
 }
-.footer-main {
-    direction: rtl;
-    text-align: right;
-}
 
-.footer-col {
-    text-align: right;
-}
-
-.footer-col .info-item {
-    justify-content: flex-start;
-}
-.footer-col .social-links {
-    display: flex;
-    gap: 18px;
-    margin-top: 15px;
-}
-
-.footer-col .social-links a svg {
-    width: 26px;
-    height: 26px;
-    fill: #d4af37;
-    opacity: 0.85;
-    transition: 0.3s;
-}
-
-.footer-col .social-links a:hover svg {
-    opacity: 1;
-    transform: scale(1.15);
-}
-/* إصلاح تمدد عمود معلومات التواصل في الفوتر */
-.footer-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.footer-col {
-    flex: 1;
-    max-width: 300px; /* يمنع تمدد العمود */
-    text-align: right;
-}
-
-.footer-col .info-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
-}
-
-.footer-col .social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-}
 .social-links a {
     width: 40px;
     height: 40px;
@@ -1588,15 +1572,3 @@ footer {
     .cta-box h3 {
         font-size: 1.4rem;
     }
-
-    /* 5. تذييل الموقع (Footer) */
-    .footer-main {
-        grid-template-columns: 1fr; /* عرض الأعمدة فوق بعضها بدلاً من جنب بعض */
-        text-align: center;
-        gap: 30px;
-    }
-
-    .footer-col {
-        grid-column: span 1 !important;
-    }
-}
