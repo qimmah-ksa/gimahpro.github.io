@@ -1274,11 +1274,11 @@ footer {
 
 /* الحاوية الأساسية للمدونة */
 .container {
-    max-width: 1200px; /* تحديد عرض المحتوى لكي لا يفرش على كامل الشاشة */
+    max-width: 1400px; /* زيادة العرض لتقليل الفراغ الجانبي */
     margin: 50px auto;
     padding: 0 20px;
+    box-sizing: border-box; /* لضمان حساب المسافات بدقة */
 }
-
 /* شبكة المقالات */
 .blog-grid {
     display: grid;
