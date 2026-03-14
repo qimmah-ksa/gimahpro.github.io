@@ -6,18 +6,18 @@
   
   <title>{% if page.title %}{{ page.title }} | قمة التميز{% else %}قمة التميز للاستشارات المالية والإدارية{% endif %}</title>
 
-{% if page.url == "/index.html" or page.url == "/" %}
-  <link rel="canonical" href="https://www.gimahpro.com/">
-{% else %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-{% endif %}
-  
-{% if page.url == "/index.html" or page.url == "/" %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="قمة التميز للاستشارات المالية والإدارية في الرياض. نقدم حلولاً احترافية في تطوير النظم، التخطيط المالي، والهيكلة الإدارية لدعم نمو الشركات السعودية.">
+  {% endif %}
+
+  {% if page.url == "/index.html" or page.url == "/" %}
     <link rel="canonical" href="https://www.gimahpro.com/">
   {% else %}
-    <link rel="canonical" href="{{ page.url | replace:'/index.html','' | absolute_url | remove: '.html' }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
-  
+
   <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
   <link rel="shortcut icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
