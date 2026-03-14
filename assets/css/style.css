@@ -1496,3 +1496,75 @@ footer {
     font-weight: 700;
     border-bottom: 2px solid var(--accent-gold);
 }
+/* --- تعديلات التجاوب مع الجوال (Mobile Responsiveness) --- */
+
+@media (max-width: 768px) {
+    /* 1. القائمة العلوية (Header) */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    .nav-cta {
+        margin-top: 10px;
+        width: 100%; /* زر تواصل معنا يأخذ العرض كامل في الجوال */
+    }
+
+    /* 2. العناوين والنصوص */
+    h1 {
+        font-size: 1.8rem !important; /* تصغير حجم العنوان ليناسب الشاشة */
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+
+    /* 3. حاويات المقالات (Article Container) */
+    .article-container {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .featured-image {
+        height: 250px; /* تقليل ارتفاع الصورة لتناسب الجوال */
+    }
+
+    /* 4. صندوق الدعوة لاتخاذ إجراء (CTA Box) */
+    .cta-box {
+        padding: 30px 20px;
+    }
+
+    .cta-box h3 {
+        font-size: 1.4rem;
+    }
+
+    /* 5. تذييل الموقع (Footer) */
+    .footer-main {
+        grid-template-columns: 1fr; /* عرض الأعمدة فوق بعضها بدلاً من جنب بعض */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-col {
+        grid-column: span 1 !important;
+    }
+}
