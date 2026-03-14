@@ -303,9 +303,15 @@ footer {
         justify-content: center !important; /* توسيط أيقونات السوشيال ميديا */
     }
 
-    .footer-col p, .footer-col a {
-        word-break: break-all; 
-    }
+  /* حل ذكي وشامل لكسر الكلمات الطويلة في كل الموقع */
+p, a, .info-text p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* كسر الإيميلات والروابط الطويلة جداً فقط عند الحاجة */
+.info-text p, .footer-col p {
+    word-break: break-word; /* يحافظ على الكلمة كاملة إلا إذا ضاق المساحة جداً */
 }
 
 /* 1. التذييل القانوني وحقوق النشر */
