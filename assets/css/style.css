@@ -264,25 +264,34 @@ footer {
     margin-bottom: 45px;
 }
 
-#latest-posts .posts-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-    gap: 30px !important;
+/* تعديل حاوية كروت المقالات */
+.posts-grid {
+    display: grid;
+    /* تأكد من استخدام auto-fit لملء المساحة تلقائياً */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; /* المسافة بين الكروت */
+    width: 100%;
+    max-width: 1200px; /* أو حسب عرض موقعك */
+    margin: 40px auto; /* auto هنا هي التي تضمن التوسط ومنع الفراغ الجانبي */
+    padding: 0 20px;
+    justify-content: center; /* لضمان تمركز الكروت إذا كان عددها قليل */
 }
 
-#latest-posts .post-card {
+/* تنسيق الكرت نفسه لضمان التساوي */
+.post-card {
     background: #fff;
-    border-radius: 14px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* لتوحيد ارتفاع الكروت */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-#latest-posts .post-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+.post-card:hover {
+    transform: translateY(-5px);
 }
-
 #latest-posts .post-thumb {
     width: 100%;
     height: 190px;
