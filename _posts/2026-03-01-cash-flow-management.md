@@ -31,8 +31,9 @@ image: "/assets/images/cash-flow-management-saudi.jpg"
 
 ---
 
-<div style="background-color: #f4f7f9; padding: 25px; border-right: 6px solid #004a99; border-radius: 8px; margin: 30px 0;">
-<h3 style="color: #004a99; margin-top: 0;">هل تواجه تحديات في توفير السيولة النقدية؟</h3>
+<div class="post-cta-box">
+    <h3> هل تواجه تحديات في توفير السيولة النقدية؟ </h3>
 <p>في <strong>قمة التميز</strong>، نقدم حلولاً مبتكرة لتحليل وإدارة التدفقات النقدية لضمان استقرار ونمو منشأتك وفق أفضل المعايير المالية المحلية والدولية.</p>
-<a href="/contact.html" style="background-color: #004a99; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">اطلب استشارة مالية الآن</a>
+    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">احجز استشارة متخصصة الآن</a>
 </div>
+
