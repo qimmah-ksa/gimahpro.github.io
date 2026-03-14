@@ -6,10 +6,10 @@
   
   <title>{% if page.title %}{{ page.title }} | قمة التميز{% else %}قمة التميز للاستشارات المالية والإدارية{% endif %}</title>
 
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
+ {% if page.url == "/index.html" or page.url == "/" %}
+    <link rel="canonical" href="https://www.gimahpro.com/">
   {% else %}
-    <meta name="description" content="قمة التميز للاستشارات المالية والإدارية في الرياض. نقدم حلولاً احترافية في تطوير النظم، التخطيط المالي، والهيكلة الإدارية لدعم نمو الشركات السعودية.">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
 
 {% if page.url == "/index.html" or page.url == "/" %}
