@@ -9,7 +9,7 @@
 {% if page.url == "/index.html" or page.url == "/" %}
   <link rel="canonical" href="https://www.gimahpro.com/">
 {% else %}
-  <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | absolute_url | append: '/' | replace: '//', '/' | replace: 'https:/', 'https://' }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% endif %}
   
 {% if page.url == "/index.html" or page.url == "/" %}
