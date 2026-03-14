@@ -40,11 +40,21 @@ header {
 
 .brand-name { 
     color: var(--accent-gold); 
-    font-size: 26px; 
+    font-size: 1.5rem; /* حجم متوازن للديسك توب */
     font-weight: 900; 
     text-decoration: none; 
+    display: flex;
+    align-items: center;
 }
 
+/* تصغير النص في الجوال لكي لا يزاحم الروابط */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 1.2rem; /* حجم أصغر يناسب الجوال */
+        justify-content: center; /* توسيط الاسم في الجوال */
+        margin-bottom: 10px;
+    }
+}
 nav { display: flex; align-items: center; gap: 20px; }
 nav a { 
     color: var(--white); 
