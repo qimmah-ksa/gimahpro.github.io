@@ -914,16 +914,18 @@ footer {
     color: #555;
 }
 
-/* إصلاح تمدد الشبكة - جعلها 3 أعمدة بدلاً من تمدد الكرت الواحد */
+/* الكود المطور لشبكة المدونة */
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* إجبار 3 كروت في السطر الواحد */
-    gap: 25px;
-    padding: 40px 10%;
+    grid-template-columns: repeat(3, 1fr); /* إجبار 3 أعمدة */
+    gap: 20px; /* تقليل المسافة قليلاً بين الكروت */
+    padding: 40px 2%; /* توسيع المساحة الجانبية من 10% إلى 2% */
+    max-width: 1200px; /* ضمان عدم تمدد الكروت بشكل زائد في الشاشات الكبيرة */
+    margin: 0 auto; /* توسيط الشبكة في منتصف الصفحة */
     direction: rtl;
 }
 
-/* تنسيق الكرت وحجمه */
+/* تنسيق الكرت المطور ليتناسب مع توزيع 3 أعمدة */
 .blog-card {
     background: #fff;
     border-radius: 12px;
@@ -932,7 +934,9 @@ footer {
     transition: transform 0.3s ease;
     direction: rtl;
     text-align: right;
-    max-width: 100%; /* لضمان عدم خروجه عن العمود */
+    width: 100%; /* اجعل الكرت يملأ كامل مساحة العمود المخصص له */
+    display: flex;
+    flex-direction: column; /* لضمان ترتيب المحتوى داخله بشكل عمودي سليم */
 }
 
 .blog-card:hover {
