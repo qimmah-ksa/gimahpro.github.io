@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | قمة التميز</title>
+  <title>{{ page.title }} | قمة التميز</title>
+
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+{% else %}
+  <meta name="description" content="قمة التميز للاستشارات المالية والإدارية في الرياض. نقدم حلولاً احترافية في تطوير النظم، التخطيط المالي، والهيكلة الإدارية لدعم نمو الشركات السعودية.">
+{% endif %}
+
+{% if page.url == "/index.html" or page.url == "/" %}
+  <link rel="canonical" href="https://www.gimahpro.com/">
+{% else %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+{% endif %}
   
   {% if page.url == "/index.html" or page.url == "/" %}
     <link rel="canonical" href="https://www.gimahpro.com/">
