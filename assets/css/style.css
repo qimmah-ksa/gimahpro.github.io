@@ -948,3 +948,74 @@ input:focus, textarea:focus { border-color: var(--accent-gold); box-shadow: 0 0 
     .cta-box, .post-cta-box { padding: 30px 20px; }
     .cta-box h3 { font-size: 1.5rem; }
 }
+/* =======================================================
+   إصلاحات الطوارئ النهائية - قمة التميز
+   ======================================================= */
+
+/* 1. حل مشكلة الشعار وعنوان الموقع */
+.brand-name img, .logo img {
+    max-width: 150px !important; /* حجم منضبط للشعار */
+    height: auto !important;
+}
+
+.brand-name {
+    font-size: 1.4rem !important; /* حجم خط متوازن للعنوان النصي */
+    white-space: nowrap; /* يمنع العنوان من الانكسار لسطرين */
+}
+
+/* 2. حل خروج الإيميل والعنوان عن الإطار (للجوال والديسك توب) */
+.info-item, .contact-details .info-item {
+    max-width: 100%;
+    overflow: hidden; /* يمنع أي شيء من الخروج */
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.info-text p, .info-text h4 {
+    max-width: 100%;
+    word-break: break-all; /* يكسر الإيميلات الطويلة إجبارياً داخل الصندوق */
+    font-size: 0.95rem !important;
+}
+
+/* 3. تصغير أيقونات التواصل الاجتماعي */
+.social-links a {
+    width: 35px !important; /* تصغير حجم الدائرة */
+    height: 35px !important;
+}
+
+.social-links a svg {
+    width: 18px !important; /* تصغير حجم الأيقونة الداخليه */
+    height: 18px !important;
+}
+
+/* 4. ضبط قسم أحدث المقالات (تنسيق الشبكة) */
+.blog-grid, .post-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 20px !important;
+    padding: 10px !important;
+}
+
+/* 5. إصلاحات خاصة بالجوال فقط (أهم جزء) */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 1.1rem !important;
+    }
+    
+    .brand-name img {
+        max-width: 120px !important;
+    }
+
+    /* ضمان بقاء كل شيء داخل الكونتينر */
+    .container, .article-container, .post-container {
+        width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 10px !important;
+    }
+
+    .info-item {
+        padding: 10px !important;
+        flex-direction: row; /* يحافظ على الأيقونة بجانب النص */
+    }
+}
