@@ -4,114 +4,42 @@ title: "أرشيف مدونة قمة التميز"
 permalink: /archive/
 ---
 
-<div class="archive-container">
-    <h1 class="archive-title">أرشيف الاستشارات والمعرفة</h1>
+<div class="archive-container" style="max-width: 900px; margin: 0 auto; padding: 40px 20px; direction: rtl;">
+    <h1 style="text-align: center; color: #004a99; margin-bottom: 50px; font-size: 2rem;">
+        أرشيف الاستشارات والمعرفة
+    </h1>
 
     {% assign categories = site.categories | sort %}
 
     {% for category in categories %}
-    <section class="category-section" id="{{ category[0] | slugify }}">
+    <div class="category-wrapper" style="margin-bottom: 50px;">
 
-        <div class="category-header">
-            <h2>{{ category[0] }}</h2>
+        <div class="category-header" id="{{ category[0] | slugify }}" 
+             style="text-align: right; margin-bottom: 20px; border-right: 5px solid #d4af37; padding-right: 15px; background: #f9f9f9; padding: 12px 20px; border-radius: 0 8px 8px 0;">
+            <h2 style="color: #004a99; font-size: 1.5rem; margin: 0;">{{ category[0] }}</h2>
         </div>
 
-        <div class="posts-grid">
+        <div class="posts-list" style="background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #eee;">
             {% for post in category[1] %}
-            <a href="{{ post.url | relative_url }}" class="post-card">
-                <div class="post-content">
-                    <h3>{{ post.title }}</h3>
-                    <p class="post-date">{{ post.date | date: "%d/%m/%Y" }}</p>
-                </div>
+            <a href="{{ post.url | relative_url }}" 
+               style="display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; text-decoration: none; border-bottom: 1px solid #f0f0f0; transition: background 0.3s;">
+                <span style="color: #333; font-weight: 600; font-size: 1.1rem;">{{ post.title }}</span>
+                <span style="color: #999; font-size: 0.85rem; white-space: nowrap; margin-right: 15px;">
+                    {{ post.date | date: "%d/%m/%Y" }}
+                </span>
             </a>
             {% endfor %}
         </div>
 
-    </section>
+    </div>
     {% endfor %}
 </div>
 
 <style>
-/* الحاوية العامة */
-.archive-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    direction: rtl;
-    font-family: "Tajawal", sans-serif;
-}
-
-/* عنوان الصفحة */
-.archive-title {
-    text-align: center;
-    color: #003d80;
-    font-size: 2.2rem;
-    margin-bottom: 60px;
-    font-weight: 700;
-}
-
-/* عنوان التصنيف */
-.category-header {
-    border-right: 6px solid #d4af37;
-    padding: 12px 20px;
-    background: #f7f7f7;
-    border-radius: 0 10px 10px 0;
-    margin-bottom: 25px;
-}
-
-.category-header h2 {
-    margin: 0;
-    font-size: 1.6rem;
-    color: #003d80;
-    font-weight: 700;
-}
-
-/* شبكة المقالات */
-.posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
-}
-
-/* بطاقة المقال */
-.post-card {
-    display: block;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: #333;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    border: 1px solid #eee;
-    transition: all 0.25s ease;
-}
-
-.post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    border-color: #d4af37;
-}
-
-/* محتوى المقال */
-.post-content h3 {
-    margin: 0 0 10px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #222;
-}
-
-.post-date {
-    font-size: 0.85rem;
-    color: #777;
-}
-
-/* تحسين الجوال */
-@media (max-width: 600px) {
-    .archive-title {
-        font-size: 1.8rem;
+    .posts-list a:hover { background-color: #fdfaf4; }
+    .posts-list a:last-child { border-bottom: none; }
+    @media (max-width: 600px) {
+        .posts-list a { padding: 12px 15px; flex-direction: column; align-items: flex-start; }
+        .posts-list a span:last-child { margin-top: 5px; margin-right: 0; }
     }
-    .category-header h2 {
-        font-size: 1.3rem;
-    }
-}
 </style>
