@@ -35,7 +35,7 @@ permalink: /blog/corporate-governance-saudi.html
 - تطوير آليات الرقابة الداخلية  
 - تدريب القيادات على تطبيق الحوكمة عمليًا  
 
-للاطلاع على المزيد، تفضل بزيارة [الهندرة الإدارية: إعادة تصميم العمليات للنمو](/blog/business-process-reengineering.html).
+للاطلاع على المزيد، تفضل بزيارة [الهندرة الإدارية: إعادة تصميم العمليات للنمو](/blog/business-process-reengineering/).
 
 <div class="post-cta-box">
     <h3>هل منشأتك جاهزة لتطبيق الحوكمة؟</h3>
