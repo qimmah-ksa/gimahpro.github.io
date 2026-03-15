@@ -3,7 +3,7 @@ layout: post
 title: "التخطيط المالي للمشاريع الصغيرة والمتوسطة"
 description: "اكتشف خطوات التخطيط المالي الناجح للمشاريع الصغيرة والمتوسطة، وكيفية تعزيز الاستدامة وتحسين الأداء المالي بما يتوافق مع متطلبات السوق السعودي."
 image: "/assets/images/sme-financial-sustainability.jpg"
-category: "استشارات المالية"
+category: "استشارات مالية"
 # الرابط القديم لضمان أرشفة محركات البحث
 permalink: /blog/sme-financial-sustainability.html
 ---
