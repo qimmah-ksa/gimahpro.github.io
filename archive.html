@@ -1,0 +1,31 @@
+---
+layout: default
+title: "أرشيف مدونة قمة التميز"
+permalink: /archive.html
+---
+
+<section class="archive-section" style="padding: 60px 0;">
+    <div class="container">
+        <h1 style="text-align: center; color: #004a99; margin-bottom: 40px;">أرشيف الاستشارات والمعرفة</h1>
+
+        {% comment %} حلقة لجلب كافة التصنيفات الموجودة في الموقع {% endcomment %}
+        {% for category in site.categories %}
+        <div class="category-block" style="margin-bottom: 40px; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+            <div class="category-header" style="background: #004a99; color: #fff; padding: 15px 20px;">
+                <h2 style="margin: 0; font-size: 1.5rem;">قسم: {{ category[0] }}</h2>
+            </div>
+            
+            <ul class="archive-posts-list" style="list-style: none; padding: 0; margin: 0;">
+                {% for post in category[1] %}
+                <li style="padding: 15px 20px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-of-between; align-items: center;">
+                    <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #333; font-weight: bold; flex-grow: 1;">
+                        {{ post.title }}
+                    </a>
+                    <span style="color: #999; font-size: 0.9rem;">{{ post.date | date: "%d/%m/%Y" }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</section>
