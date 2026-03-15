@@ -3,7 +3,7 @@ layout: post
 title: "مهارات القيادة الإدارية في الأزمات"
 description: "تعرف على أهم مهارات القيادة الإدارية في الأزمات وكيف يمكن للقادة توجيه منشأتهم نحو بر الأمان في أوقات التحديات."
 image: "/assets/images/leadership-in-crisis.jpg"
-category: "تطوير اداري "
+category: " تطوير اداري "
 # الحفاظ على الرابط القديم لضمان الأرشفة
 permalink: /blog/leadership-in-crisis.html
 ---
