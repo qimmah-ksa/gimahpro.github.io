@@ -60,7 +60,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- المقالات الجديدة -->
   <url>
     <loc>https://www.gimahpro.com/blog/digital-transformation-saudi.html</loc>
     <lastmod>2026-02-25</lastmod>
@@ -89,7 +88,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- المقالات المضافة -->
   <url>
     <loc>https://www.gimahpro.com/blog/business-process-reengineering.html</loc>
     <lastmod>2026-03-15</lastmod>
@@ -106,21 +104,21 @@
 
   <!-- الصفحات القانونية -->
   <url>
-    <loc>https://www.gimahpro.com/legal/privacy.html</loc>
+    <loc>https://www.gimahpro.com/legal/privacy</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.gimahpro.com/legal/terms.html</loc>
+    <loc>https://www.gimahpro.com/legal/terms</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.gimahpro.com/legal/disclaimer.html</loc>
+    <loc>https://www.gimahpro.com/legal/disclaimer</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -128,14 +126,14 @@
 
   <!-- الصفحات العامة -->
   <url>
-    <loc>https://www.gimahpro.com/about.html</loc>
+    <loc>https://www.gimahpro.com/about</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.gimahpro.com/contact.html</loc>
+    <loc>https://www.gimahpro.com/contact</loc>
     <lastmod>2026-02-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
