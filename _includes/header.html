@@ -7,8 +7,14 @@
         <a href="/">الرئيسية</a>
         <a href="/about">من نحن</a>
         <a href="/#services">الخدمات</a> 
-        <a href="/#why-us">لماذا نحن</a>                
-        <a href="/#latest-posts">أحدث المقالات</a> 
+        <a href="/#why-us">لماذا نحن</a> 
+        
+        {% if page.url == "/blog/" %}
+            <a href="/archive/">التصنيفات</a>
+        {% else %}
+            <a href="/#latest-posts">أحدث المقالات</a>
+        {% endif %}
+
         <a href="/blog/">المدونة</a>
         <a href="/contact.html" class="nav-cta">تواصل معنا</a>
     </nav>
