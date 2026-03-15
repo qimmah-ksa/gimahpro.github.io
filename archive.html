@@ -8,21 +8,21 @@ permalink: /archive/
     <h1 style="text-align: center; color: #004a99; margin-bottom: 50px; font-size: 2rem;">أرشيف الاستشارات والمعرفة</h1>
 
     {% comment %} 
-       الطريقة الأضمن: استخراج التصنيفات الفريدة أولاً
+       خطوة 1: استخراج وتصفية التصنيفات وتحويلها لنصوص صافية لمنع التكرار
     {% endcomment %}
-    {% assign categories = "" | split: "" %}
+    {% assign raw_categories = "" %}
     {% for post in site.posts %}
-        {% for category in post.categories %}
-            {% unless categories contains category %}
-                {% assign categories = categories | push: category %}
-            {% endunless %}
+        {% for cat in post.categories %}
+            {% assign raw_categories = raw_categories | append: "|" | append: cat %}
         {% endfor %}
     {% endfor %}
+    
+    {% assign category_list = raw_categories | remove_first: "|" | split: "|" | uniq | sort %}
 
     {% comment %} 
-       الآن نعرض كل تصنيف وتحته مقالاته مرة واحدة فقط
+       خطوة 2: العرض بناءً على القائمة المصفاة
     {% endcomment %}
-    {% for category in categories %}
+    {% for category in category_list %}
     <div class="category-wrapper" style="margin-bottom: 50px;">
         
         <div class="category-header" id="{{ category | slugify }}" style="text-align: right; margin-bottom: 20px; border-right: 5px solid #d4af37; padding-right: 15px; background: #f9f9f9; padding: 12px 20px; border-radius: 0 8px 8px 0;">
