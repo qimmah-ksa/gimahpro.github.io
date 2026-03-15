@@ -3,7 +3,7 @@ layout: post
 title: "تطوير النظم الإدارية: المفتاح السحري لرفع كفاءة المنشآت"
 description: "تعرف على دور تطوير النظم الإدارية في رفع كفاءة المنشآت وتحقيق الاستدامة وكيف يحول العمل العشوائي إلى عمل مؤسسي مستدام مع قمة التميز."
 image: "/assets/images/systems-development-efficiency.jpg"
-category: "تطوير اداري"
+category: "تطوير اداري "
 # الرابط القديم لضمان أرشفة محركات البحث
 permalink: /blog/systems-development-efficiency.html
 ---
