@@ -1572,3 +1572,7 @@ header .brand-name {
     .cta-box h3 {
         font-size: 1.4rem;
     }
+    .about-page .featured-image {
+    margin-top: 10px !important;
+    display: block;
+}
