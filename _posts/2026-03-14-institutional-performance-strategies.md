@@ -3,7 +3,7 @@ layout: post
 title: "استراتيجيات تحسين الأداء المؤسسي لعام 2026"
 description: "استكشف أحدث استراتيجيات تحسين الأداء المؤسسي لعام 2026، بما في ذلك التحول الرقمي، تطوير العمليات، ورفع كفاءة الموارد."
 image: "/assets/images/institutional-performance-strategies.jpg"
-category: "إدارة مؤسسية"
+category: " تطوير إداري"
 # الرابط القديم لضمان استمرارية الأرشفة
 permalink: /blog/institutional-performance-strategies.html
 ---

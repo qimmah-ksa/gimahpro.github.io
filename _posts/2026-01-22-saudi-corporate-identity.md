@@ -3,7 +3,7 @@ layout: post
 title: "كيف تبني هوية مؤسسية قوية في السوق السعودي؟"
 description: "تعرف على خطوات بناء هوية مؤسسية قوية تعكس قيم علامتك التجارية، وتعزز ثقة العملاء، وتمنح شركتك حضورًا احترافيًا مميزًا في السوق السعودي."
 image: "/assets/images/saudi-corporate-identity.jpg"
-category: "تطوير الأعمال"
+category: "الهوية والنمو"
 # الرابط القديم لضمان أرشفة محركات البحث
 permalink: /blog/saudi-corporate-identity.html
 ---
