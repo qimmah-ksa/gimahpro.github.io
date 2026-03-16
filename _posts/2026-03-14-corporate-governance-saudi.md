@@ -35,7 +35,12 @@ permalink: /blog/corporate-governance-saudi.html
 - تطوير آليات الرقابة الداخلية  
 - تدريب القيادات على تطبيق الحوكمة عمليًا  
 
-للاطلاع على المزيد، تفضل بزيارة [الهندرة الإدارية: إعادة تصميم العمليات للنمو]({{ site.baseurl }}/blog/business-process-reengineering.html).
+<div style="background:#f7f7f7; padding:15px; border-radius:8px; text-align:center; margin:30px 0;">
+    <a href="/blog/business-process-reengineering.html"
+       style="color:#004a99; font-weight:600; text-decoration:none;">
+        الهندرة الإدارية: إعادة تصميم العمليات للنمو
+    </a>
+</div>
 
 <section class="archive-link-section" style="text-align: center; margin: 25px 0;">
     <a href="/archive/" 
