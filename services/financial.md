@@ -12,7 +12,7 @@ permalink: /services/financial/
     </div>
 </section>
 
-<section class="service-content" style="padding:60px 0; direction:rtl;">
+<section class="service-content" style="padding:60px 0; direction:rtl; text-align:center;">
     <div class="container" style="max-width:900px; margin:0 auto; padding:0 20px;">
 
         <!-- المشكلة -->
