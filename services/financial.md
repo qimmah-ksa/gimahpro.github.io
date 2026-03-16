@@ -6,7 +6,7 @@ permalink: /services/financial/
 ---
 
 <section class="service-detail-header" style="background:#004a99; color:#fff; padding:80px 0 60px; text-align:center;">
-    <div class="container" style="max-width:900px; margin:0 auto; padding:0 20px;">
+    <div class="container" style="max-width:900px; margin:0 auto; padding:0 20px; text-align:center;">
         <h1 style="font-size:2.5rem; margin-bottom:20px;">الاستشارات المالية وإدارة النقد</h1>
         <p style="font-size:1.2rem; opacity:0.9;">نساعدك على بناء منظومة مالية متينة تضمن استدامة النمو وتدفق السيولة.</p>
     </div>
