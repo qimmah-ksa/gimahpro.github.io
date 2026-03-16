@@ -1,0 +1,32 @@
+name: IndexNow URL Submission
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  submit-urls:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate URL list
+        run: |
+          echo "https://www.gimahpro.com/" > urls.txt
+          find . -name "*.html" | sed 's|./||' | while read file; do
+            echo "https://www.gimahpro.com/$file" >> urls.txt
+          done
+
+      - name: Submit URLs to IndexNow
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "host": "www.gimahpro.com",
+            "key": "d9b341792463423dbc157866d1d0d182",
+            "keyLocation": "https://www.gimahpro.com/d9b341792463423dbc157866d1d0d182.txt",
+            "urlList": '"$(jq -R -s -c 'split("\n")[:-1]' urls.txt)"'
+          }'
