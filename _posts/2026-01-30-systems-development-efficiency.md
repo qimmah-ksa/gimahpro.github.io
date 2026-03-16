@@ -43,6 +43,21 @@ permalink: /blog/systems-development-efficiency.html
 
 للاطلاع على المزيد من المقالات الاحترافية، تفضل بزيارة [صفحة المدونة](/blog/).
 
+<section class="archive-link-section" style="text-align: center; margin: 25px 0;">
+    <a href="/archive/" 
+       style="font-size: 1.1rem; 
+              color: #004a99; 
+              font-weight: 600; 
+              text-decoration: none; 
+              padding: 10px 20px; 
+              border: 1px solid #004a99; 
+              border-radius: 6px; 
+              display: inline-block; 
+              transition: 0.3s;">
+        عرض جميع المقالات في صفحة الأرشيف
+    </a>
+</section>
+
 <div class="post-cta-box">
     <h3>هل تعاني من عشوائية في إدارة عملياتك؟</h3>
     <p>نحن في قمة التميز نساعدك على وضع أسس إدارية متينة تضمن لك التميز والاستدامة.</p>

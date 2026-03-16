@@ -62,6 +62,21 @@ permalink: /blog/financial-process-automation.html
 
 للاطلاع على المزيد من المقالات الاحترافية، تفضل بزيارة [صفحة المدونة](/blog/).
 
+<section class="archive-link-section" style="text-align: center; margin: 25px 0;">
+    <a href="/archive/" 
+       style="font-size: 1.1rem; 
+              color: #004a99; 
+              font-weight: 600; 
+              text-decoration: none; 
+              padding: 10px 20px; 
+              border: 1px solid #004a99; 
+              border-radius: 6px; 
+              display: inline-block; 
+              transition: 0.3s;">
+        عرض جميع المقالات في صفحة الأرشيف
+    </a>
+</section>
+
 <div class="post-cta-box">
     <h3>هل أنت مستعد لأتمتة نظامك المالي؟</h3>
     <p>دعنا نساعدك في قمة التميز على تبني التقنيات التي تضعك في المقدمة.</p>

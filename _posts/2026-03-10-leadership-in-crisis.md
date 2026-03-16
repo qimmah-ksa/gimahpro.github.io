@@ -40,6 +40,21 @@ permalink: /blog/leadership-in-crisis.html
 
 إن القيادة الفعّالة في الأزمات هي فن يعتمد على الخبرة والوعي. ومع وجود قائد قوي، يمكن لأي منشأة تجاوز أصعب الظروف والوصول إلى بر الأمان.
 
+<section class="archive-link-section" style="text-align: center; margin: 25px 0;">
+    <a href="/archive/" 
+       style="font-size: 1.1rem; 
+              color: #004a99; 
+              font-weight: 600; 
+              text-decoration: none; 
+              padding: 10px 20px; 
+              border: 1px solid #004a99; 
+              border-radius: 6px; 
+              display: inline-block; 
+              transition: 0.3s;">
+        عرض جميع المقالات في صفحة الأرشيف
+    </a>
+</section>
+
 <div class="post-cta-box">
     <h3>هل ترغب في تطوير مهاراتك القيادية؟</h3>
     <p>نساعدك في اكتساب مهارات القيادة الفعّالة لإدارة الأزمات بثقة واحترافية.</p>

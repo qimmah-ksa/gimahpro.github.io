@@ -50,6 +50,21 @@ permalink: /blog/human-capital-management.html
 
 إن الاستثمار في رأس المال البشري هو استثمار في مستقبل المؤسسة، فالشركات التي تحافظ على كفاءاتها تبني لنفسها ميزة تنافسية مستدامة وتضمن نجاحها في سوق سريع التغير.
 
+<section class="archive-link-section" style="text-align: center; margin: 25px 0;">
+    <a href="/archive/" 
+       style="font-size: 1.1rem; 
+              color: #004a99; 
+              font-weight: 600; 
+              text-decoration: none; 
+              padding: 10px 20px; 
+              border: 1px solid #004a99; 
+              border-radius: 6px; 
+              display: inline-block; 
+              transition: 0.3s;">
+        عرض جميع المقالات في صفحة الأرشيف
+    </a>
+</section>
+
 <div class="post-cta-box">
     <h3>هل ترغب في تطوير رأس المال البشري في مؤسستك؟</h3>
     <p>نساعدك في بناء بيئة عمل جاذبة للكفاءات ومحققة للتميز المؤسسي.</p>
