@@ -4,7 +4,7 @@ title: "إعداد الخطط الاستراتيجية وخطط التحول"
 permalink: /services/strategic-planning/
 ---
 
-<section class="service-hero" style="padding: 60px 20px; direction: rtl; text-align: right;">
+<section class="service-hero" style="padding: 60px 40px; direction: rtl; text-align: right;">
     <h1 style="color: #004a99; font-size: 2.2rem; margin-bottom: 20px;">
         إعداد الخطط الاستراتيجية وخطط التحول
     </h1>
@@ -63,8 +63,16 @@ permalink: /services/strategic-planning/
     <div style="margin-bottom: 40px;">
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
-            <li><a href="/blog/corporate-governance-saudi/" style="color: #d4af37;">حوكمة الشركات في السعودية: نحو ميزة تنافسية أقوى</a></li>
-            <li><a href="/blog/performance-strategy-2026/" style="color: #d4af37;">استراتيجيات تحسين الأداء المؤسسي لعام 2026</a></li>
+            <li>
+                <a href="/blog/corporate-governance-saudi/" style="color: #004a99; font-weight: 600;">
+                    حوكمة الشركات في السعودية: نحو ميزة تنافسية أقوى
+                </a>
+            </li>
+            <li>
+                <a href="/blog/performance-strategy-2026/" style="color: #004a99; font-weight: 600;">
+                    استراتيجيات تحسين الأداء المؤسسي لعام 2026
+                </a>
+            </li>
         </ul>
     </div>
 
