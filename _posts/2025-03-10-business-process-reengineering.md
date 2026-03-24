@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "الهندرة الإدارية: إعادة تصميم العمليات للنمو"
-permalink: /blog/business-process-reengineering.html
 description: "دليل شامل حول هندرة الإدارة (BPR) وكيفية إعادة تصميم العمليات الإدارية من الصفر لرفع الكفاءة وتقليص التكاليف في الشركات السعودية عام 2026."
 image: "/assets/images/business-process-reengineering.jpg"
 category: "الاستشارات الإدارية وتطوير الهياكل التنظيمية"
