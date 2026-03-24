@@ -3,8 +3,7 @@ layout: post
 title: "إدارة رأس المال البشري: كيف تحافظ على الكفاءات؟"
 description: "تعرف على أفضل استراتيجيات إدارة رأس المال البشري وكيف تحافظ الشركات السعودية على الكفاءات في بيئة عمل تنافسية."
 image: "/assets/images/human-capital-management.jpg"
-category: " تطوير اداري "
-# الحفاظ على الرابط القديم 100% لضمان الأرشفة
+category: "الاستشارات الإدارية وتطوير الهياكل التنظيمية"
 permalink: /blog/human-capital-management.html
 ---
 
