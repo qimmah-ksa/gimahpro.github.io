@@ -69,7 +69,7 @@ permalink: /services/strategic-planning/
                 </a>
             </li>
             <li>
-                <a href="/blog/performance-strategy-2026/" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/institutional-performance-strategies/" style="color: #004a99; font-weight: 600;">
                     استراتيجيات تحسين الأداء المؤسسي لعام 2026
                 </a>
             </li>
