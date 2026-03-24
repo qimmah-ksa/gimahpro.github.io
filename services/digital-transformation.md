@@ -64,18 +64,14 @@ permalink: /services/digital-transformation/
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
             <li>
-                <a href="/blog/digital-transformation-ksa/" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/digital-transformation-saudi/" style="color: #004a99; font-weight: 600;">
                     التحول الرقمي في السعودية: فرص وتحديات
                 </a>
             </li>
+           
             <li>
-                <a href="/blog/erp-selection-guide/" style="color: #004a99; font-weight: 600;">
-                    كيف تختار نظام ERP المناسب لمنشأتك؟
-                </a>
-            </li>
-            <li>
-                <a href="/blog/process-automation-benefits/" style="color: #004a99; font-weight: 600;">
-                    فوائد أتمتة العمليات في المنشآت
+                <a href="/blog/financial-process-automation/" style="color: #004a99; font-weight: 600;">
+       أتمتة العمليات المالية: كيف توفر وقتك وجهدك؟
                 </a>
             </li>
         </ul>
