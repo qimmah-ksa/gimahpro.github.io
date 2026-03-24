@@ -3,7 +3,6 @@ layout: post
 title: "التحول الرقمي في الشركات السعودية: مواكبة رؤية 2030"
 description: "تعرف على أهمية التحول الرقمي للشركات السعودية، وكيف يمكن للتقنيات الحديثة دعم الكفاءة والابتكار، وتحقيق التوافق مع مستهدفات رؤية السعودية 2030."
 image: "/assets/images/digital-transformation-saudi.jpg"
-category: "التحول الرقمي وأتمتة العمليات"
 permalink: /blog/digital-transformation-saudi.html
 ---
 
