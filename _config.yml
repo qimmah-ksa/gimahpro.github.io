@@ -8,13 +8,17 @@ description: >-
 baseurl: ""
 url: "https://www.gimahpro.com"
 
-# التعديل الذهبي هنا:
+# الروابط الدائمة للمقالات
 permalink: /blog/:title.html
 
-# إعدادات إضافية لضمان قراءة المقالات
+# تفعيل الإخراج للمقالات
 collections:
   posts:
     output: true
+
+# إضافة البلجن الخاص بالسيت ماب
+plugins:
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
