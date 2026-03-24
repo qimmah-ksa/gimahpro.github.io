@@ -3,8 +3,7 @@ layout: post
 title: "أتمتة العمليات المالية: كيف توفر وقتك وجهدك؟"
 description: "اكتشف كيف تساعد أتمتة العمليات المالية في توفير الوقت والجهد وزيادة الدقة لمنشأتك مع قمة التميز للاستشارات."
 image: "/assets/images/financial-process-automation.jpg"
-category: "استشارات مالية"
-# الحفاظ على الرابط القديم
+category: "التحول الرقمي وأتمتة العمليات"
 permalink: /blog/financial-process-automation.html
 ---
 
