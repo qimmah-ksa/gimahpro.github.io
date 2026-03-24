@@ -4,7 +4,7 @@ title: "تحسين الأداء المؤسسي وإدارة المخاطر"
 permalink: /services/performance-improvement/
 ---
 
-<section class="service-hero" style="padding: 60px 20px; direction: rtl; text-align: right;">
+<section class="service-hero" style="padding: 60px 40px; direction: rtl; text-align: right;">
     <h1 style="color: #004a99; font-size: 2.2rem; margin-bottom: 20px;">
         تحسين الأداء المؤسسي وإدارة المخاطر
     </h1>
@@ -63,9 +63,21 @@ permalink: /services/performance-improvement/
     <div style="margin-bottom: 40px;">
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
-            <li><a href="/blog/kpi-design-guide/" style="color: #d4af37;">كيف تصمم مؤشرات أداء فعّالة لمنشأتك؟</a></li>
-            <li><a href="/blog/risk-management-basics/" style="color: #d4af37;">أساسيات إدارة المخاطر في المنشآت</a></li>
-            <li><a href="/blog/lean-management-saudi/" style="color: #d4af37;">منهجية Lean: كيف تقلل الهدر وترفع الإنتاجية؟</a></li>
+            <li>
+                <a href="/blog/kpi-design-guide/" style="color: #004a99; font-weight: 600;">
+                    كيف تصمم مؤشرات أداء فعّالة لمنشأتك؟
+                </a>
+            </li>
+            <li>
+                <a href="/blog/risk-management-basics/" style="color: #004a99; font-weight: 600;">
+                    أساسيات إدارة المخاطر في المنشآت
+                </a>
+            </li>
+            <li>
+                <a href="/blog/lean-management-saudi/" style="color: #004a99; font-weight: 600;">
+                    منهجية Lean: كيف تقلل الهدر وترفع الإنتاجية؟
+                </a>
+            </li>
         </ul>
     </div>
 
