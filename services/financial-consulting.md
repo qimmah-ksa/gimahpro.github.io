@@ -63,17 +63,17 @@ permalink: /services/financial-consulting/
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
             <li>
-                <a href="/blog/strategic-financial-analysis.html" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/strategic-financial-analysis/" style="color: #004a99; font-weight: 600;">
                     أهمية التحليل المالي في اتخاذ القرارات الإدارية
                 </a>
             </li>
             <li>
-                <a href="/blog/sme-financial-planning.html" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/sme-financial-planning/" style="color: #004a99; font-weight: 600;">
                     التخطيط المالي للمشاريع الصغيرة والمتوسطة
                 </a>
             </li>
             <li>
-                <a href="/blog/cash-flow-management.html" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/cash-flow-management/" style="color: #004a99; font-weight: 600;">
                     إدارة التدفقات النقدية وحماية المنشآت من أزمات السيولة
                 </a>
             </li>
