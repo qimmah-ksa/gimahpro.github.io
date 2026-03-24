@@ -3,7 +3,7 @@ layout: post
 title: "حوكمة الشركات في السعودية: نحو ميزة تنافسية أقوى"
 description: "تعرف على كيف تحولت حوكمة الشركات في السعودية من مجرد التزام نظامي إلى عنصر أساسي يمنح المنشآت ميزة تنافسية حقيقية في السوق."
 image: "/assets/images/corporate-governance-saudi.jpg"
-category: " تطوير اداري "
+category: "إعداد الخطط الاستراتيجية وخطط التحول"
 permalink: /blog/corporate-governance-saudi.html
 ---
 
