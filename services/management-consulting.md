@@ -64,7 +64,7 @@ permalink: /services/management-consulting/
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
             <li>
-                <a href="/blog/admin-systems-development/" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/systems-development-efficiency/" style="color: #004a99; font-weight: 600;">
                     تطوير النظم الإدارية: المفتاح السحري لرفع كفاءة المنشآت
                 </a>
             </li>
@@ -74,7 +74,7 @@ permalink: /services/management-consulting/
                 </a>
             </li>
             <li>
-                <a href="/blog/leadership-crisis-management/" style="color: #004a99; font-weight: 600;">
+                <a href="/blog/leadership-in-crisis/" style="color: #004a99; font-weight: 600;">
                     مهارات القيادة الإدارية في الأزمات
                 </a>
             </li>
