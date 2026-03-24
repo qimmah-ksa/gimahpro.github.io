@@ -64,20 +64,16 @@ permalink: /services/performance-improvement/
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
             <li>
-                <a href="/blog/kpi-design-guide/" style="color: #004a99; font-weight: 600;">
-                    كيف تصمم مؤشرات أداء فعّالة لمنشأتك؟
+                <a href="/blog/saudi-corporate-identity/" style="color: #004a99; font-weight: 600;">  
+                كيف تبني هوية مؤسسية قوية في السوق السعودي؟
                 </a>
             </li>
             <li>
-                <a href="/blog/risk-management-basics/" style="color: #004a99; font-weight: 600;">
-                    أساسيات إدارة المخاطر في المنشآت
+                <a href="/blog/operational-risk-management/" style="color: #004a99; font-weight: 600;">
+                   دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت
                 </a>
             </li>
-            <li>
-                <a href="/blog/lean-management-saudi/" style="color: #004a99; font-weight: 600;">
-                    منهجية Lean: كيف تقلل الهدر وترفع الإنتاجية؟
-                </a>
-            </li>
+           
         </ul>
     </div>
 
