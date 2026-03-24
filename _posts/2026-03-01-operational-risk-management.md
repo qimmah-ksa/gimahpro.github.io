@@ -3,8 +3,7 @@ layout: post
 title: "دليلك الشامل لإدارة المخاطر التشغيلية في المنشآت"
 description: "دليل شامل لإدارة المخاطر التشغيلية يشمل طرق تحديد المخاطر، تقييمها، ووضع خطط استمرارية الأعمال لضمان حماية العمليات."
 image: "/assets/images/operational-risk-management.jpg"
-category: " تطوير اداري "
-# الرابط القديم لضمان أرشفة محركات البحث
+category: "تحسين الأداء المؤسسي وإدارة المخاطر"
 permalink: /blog/operational-risk-management.html
 ---
 
