@@ -4,7 +4,7 @@ title: "الاستشارات الإدارية وتطوير الهياكل الت
 permalink: /services/management-consulting/
 ---
 
-<section class="service-hero" style="padding: 60px 20px; direction: rtl; text-align: right;">
+<section class="service-hero" style="padding: 60px 40px; direction: rtl; text-align: right;">
     <h1 style="color: #004a99; font-size: 2.2rem; margin-bottom: 20px;">
         الاستشارات الإدارية وتطوير الهياكل التنظيمية
     </h1>
@@ -63,10 +63,26 @@ permalink: /services/management-consulting/
     <div style="margin-bottom: 40px;">
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
-            <li><a href="/blog/admin-systems-development/" style="color: #d4af37;">تطوير النظم الإدارية: المفتاح السحري لرفع كفاءة المنشآت</a></li>
-            <li><a href="/blog/human-capital-management/" style="color: #d4af37;">إدارة رأس المال البشري: كيف تحافظ على الكفاءات؟</a></li>
-            <li><a href="/blog/leadership-crisis-management/" style="color: #d4af37;">مهارات القيادة الإدارية في الأزمات</a></li>
-            <li><a href="/blog/business-process-reengineering/" style="color: #d4af37;">الهندرة الإدارية: إعادة تصميم العمليات للنمو</a></li>
+            <li>
+                <a href="/blog/admin-systems-development/" style="color: #004a99; font-weight: 600;">
+                    تطوير النظم الإدارية: المفتاح السحري لرفع كفاءة المنشآت
+                </a>
+            </li>
+            <li>
+                <a href="/blog/human-capital-management/" style="color: #004a99; font-weight: 600;">
+                    إدارة رأس المال البشري: كيف تحافظ على الكفاءات؟
+                </a>
+            </li>
+            <li>
+                <a href="/blog/leadership-crisis-management/" style="color: #004a99; font-weight: 600;">
+                    مهارات القيادة الإدارية في الأزمات
+                </a>
+            </li>
+            <li>
+                <a href="/blog/business-process-reengineering/" style="color: #004a99; font-weight: 600;">
+                    الهندرة الإدارية: إعادة تصميم العمليات للنمو
+                </a>
+            </li>
         </ul>
     </div>
 
