@@ -8,8 +8,8 @@ description: >-
 baseurl: ""
 url: "https://www.gimahpro.com"
 
-# الروابط الدائمة للمقالات
-permalink: /blog/:title.html
+# الروابط الدائمة للمقالات (بدون .html)
+permalink: /blog/:title/
 
 # تفعيل الإخراج للمقالات
 collections:
