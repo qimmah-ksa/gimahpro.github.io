@@ -4,7 +4,7 @@ title: "الاستشارات المالية وإدارة السيولة"
 permalink: /services/financial-consulting/
 ---
 
-<section class="service-hero" style="padding: 60px 20px; direction: rtl; text-align: right;">
+<section class="service-hero" style="padding: 60px 40px; direction: rtl; text-align: right;">
     <h1 style="color: #004a99; font-size: 2.2rem; margin-bottom: 20px;">
         الاستشارات المالية وإدارة السيولة
     </h1>
@@ -62,9 +62,21 @@ permalink: /services/financial-consulting/
     <div style="margin-bottom: 40px;">
         <h2 style="color: #004a99; font-size: 1.6rem; margin-bottom: 15px;">مقالات مرتبطة بالخدمة</h2>
         <ul style="color: #444; line-height: 1.9; padding-right: 20px;">
-            <li><a href="/blog/strategic-financial-analysis.html" style="color: #d4af37;">أهمية التحليل المالي في اتخاذ القرارات الإدارية</a></li>
-            <li><a href="/blog/sme-financial-planning.html" style="color: #d4af37;">التخطيط المالي للمشاريع الصغيرة والمتوسطة</a></li>
-            <li><a href="/blog/cash-flow-management.html" style="color: #d4af37;">إدارة التدفقات النقدية وحماية المنشآت من أزمات السيولة</a></li>
+            <li>
+                <a href="/blog/strategic-financial-analysis.html" style="color: #004a99; font-weight: 600;">
+                    أهمية التحليل المالي في اتخاذ القرارات الإدارية
+                </a>
+            </li>
+            <li>
+                <a href="/blog/sme-financial-planning.html" style="color: #004a99; font-weight: 600;">
+                    التخطيط المالي للمشاريع الصغيرة والمتوسطة
+                </a>
+            </li>
+            <li>
+                <a href="/blog/cash-flow-management.html" style="color: #004a99; font-weight: 600;">
+                    إدارة التدفقات النقدية وحماية المنشآت من أزمات السيولة
+                </a>
+            </li>
         </ul>
     </div>
 
