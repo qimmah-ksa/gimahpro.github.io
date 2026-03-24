@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "إدارة التدفقات النقدية وحماية المنشآت من أزمات السيولة"
-permalink: /blog/cash-flow-management.html
 description: "دليل احترافي شامل حول الفرق بين الربح والسيولة، وأهم الأدوات المالية للتنبؤ بالتدفقات النقدية وضمان استمرارية العمليات التشغيلية في المنشآت السعودية."
 image: "/assets/images/cash-flow-management-saudi.jpg"
 category: "الاستشارات المالية وإدارة السيولة"
