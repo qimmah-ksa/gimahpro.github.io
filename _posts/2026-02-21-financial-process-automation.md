@@ -78,5 +78,5 @@ category: "التحول الرقمي وأتمتة العمليات"
 <div class="post-cta-box">
     <h3>هل أنت مستعد لأتمتة نظامك المالي؟</h3>
     <p>دعنا نساعدك في قمة التميز على تبني التقنيات التي تضعك في المقدمة.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">اطلب استشارة تقنية الآن</a>
+    <a href="/#contact" class="btn-gold" style="text-decoration: none;">اطلب استشارة تقنية الآن</a>
 </div>
