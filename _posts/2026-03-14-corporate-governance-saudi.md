@@ -35,7 +35,7 @@ category: "إعداد الخطط الاستراتيجية وخطط التحول"
 - تدريب القيادات على تطبيق الحوكمة عمليًا  
 
 <div style="background:#f7f7f7; padding:15px; border-radius:8px; text-align:center; margin:30px 0;">
-    <a href="/blog/business-process-reengineering.html"
+    <a href="/blog/business-process-reengineering/"
        style="color:#004a99; font-weight:600; text-decoration:none;">
         الهندرة الإدارية: إعادة تصميم العمليات للنمو
     </a>
@@ -59,5 +59,5 @@ category: "إعداد الخطط الاستراتيجية وخطط التحول"
 <div class="post-cta-box">
     <h3>هل منشأتك جاهزة لتطبيق الحوكمة؟</h3>
     <p>نساعدك في بناء إطار حوكمة احترافي يعزز ثقة المستثمرين ويرفع كفاءة الأداء.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">تواصل معنا الآن</a>
+    <a href="/#contact" class="btn-gold" style="text-decoration: none;">تواصل معنا الآن</a>
 </div>
