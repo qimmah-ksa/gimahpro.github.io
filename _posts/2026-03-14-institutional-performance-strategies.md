@@ -66,5 +66,5 @@ category: "إعداد الخطط الاستراتيجية وخطط التحول"
 <div class="post-cta-box">
     <h3>هل أنت مستعد لتطوير أداء منشأتك وفق معايير 2026؟</h3>
     <p>نحن في قمة التميز نضع خبراتنا بين يديك لضمان نمو وازدهار أعمالك.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">اطلب استشارة إدارية الآن</a>
+    <a href="/#contact" class="btn-gold" style="text-decoration: none;">اطلب استشارة إدارية الآن</a>
 </div>
