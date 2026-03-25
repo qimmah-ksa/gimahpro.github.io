@@ -79,5 +79,5 @@ category: "الاستشارات المالية وإدارة السيولة"
 <div class="post-cta-box">
     <h3>هل تبحث عن رؤية مالية تعزز قراراتك؟</h3>
     <p>نحن في قمة التميز نضع خبراتنا بين يديك لضمان نمو وازدهار أعمالك.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">احصل على استشارة مالية الآن</a>
+   <a href="/#contact" class="btn-gold">احصل على استشارة الآن</a>
 </div>
