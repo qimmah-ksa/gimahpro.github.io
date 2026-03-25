@@ -44,11 +44,10 @@ category: "الاستشارات المالية وإدارة السيولة"
     </a>
 </section>
 
----
 
 <div class="post-cta-box">
     <h3> هل تواجه تحديات في توفير السيولة النقدية؟ </h3>
 <p>في <strong>قمة التميز</strong>، نقدم حلولاً مبتكرة لتحليل وإدارة التدفقات النقدية لضمان استقرار ونمو منشأتك وفق أفضل المعايير المالية المحلية والدولية.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">احجز استشارة متخصصة الآن</a>
+    <a href="/#contact" class="btn-gold" style="text-decoration: none;">احجز استشارة متخصصة الآن</a>
 </div>
 
