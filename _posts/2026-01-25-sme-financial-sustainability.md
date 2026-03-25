@@ -54,5 +54,5 @@ category: "الاستشارات المالية وإدارة السيولة"
 <div class="post-cta-box">
     <h3>هل ترغب في تطوير التخطيط المالي لمشروعك؟</h3>
     <p>نساعدك في بناء خطة مالية قوية تضمن استدامة منشأتك ونموها في السوق السعودي.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">احصل على استشارة مالية الآن</a>
+    <a href="/#contact" class="btn-gold" style="text-decoration: none;">احصل على استشارة مالية الآن</a>
 </div>
