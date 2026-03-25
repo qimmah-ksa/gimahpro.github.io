@@ -61,5 +61,5 @@ category: "تطوير الأعمال ونماذج الربحية"
 <div class="post-cta-box">
     <h3>هل أنت مستعد لنقل هويتك المؤسسية للقمة؟</h3>
     <p>نحن في قمة التميز نضع خبراتنا بين يديك لضمان نمو وازدهار أعمالك وصناعة علامة تجارية لا تُنسى.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">ابدأ رحلة التميز معنا</a>
+   <a href="/#contact" class="btn-gold">احصل على استشارة الآن</a>
 </div>
