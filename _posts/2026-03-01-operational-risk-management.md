@@ -63,5 +63,5 @@ category: "تحسين الأداء المؤسسي وإدارة المخاطر"
 <div class="post-cta-box">
     <h3>هل ترغب في بناء إطار متكامل لإدارة المخاطر التشغيلية في منشأتك؟</h3>
     <p>في قمة التميز نساعدك على تصميم وتطبيق نظام احترافي يعزز استمرارية أعمالك وكفاءتك التشغيلية.</p>
-    <a href="/index.html#contact" class="btn-gold" style="text-decoration: none;">احجز استشارة متخصصة الآن</a>
+    <a href="/#contact" class="btn-gold" style="text-decoration: none;">احجز استشارة متخصصة الآن</a>
 </div>
