@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "هل منشأتك تسير في الاتجاه الصحيح؟ اختبر جاهزيتك عبر 20 سؤالاً في تطوير الأعمال ونماذج الربحية"
-(/assets/images/business-diagnostic-models.png)
+image: "/assets/images/business-diagnostic-models.jpg"
 date: 2026-03-24 21:30:00 +0300
 categories: [تطوير الأعمال ونماذج الربحية]
 tags: [تطوير الأعمال, نماذج الربحية, الاستشارات المالية, الاستشارات الإدارية, قمة التميز]
