@@ -1,0 +1,27 @@
+---
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+
+  <script>
+    // إذا كان الرابط ينتهي بـ .html
+    if (window.location.pathname.endsWith(".html")) {
+      // إزالة .html
+      var newPath = window.location.pathname.replace(".html", "/");
+
+      // إعادة التوجيه
+      window.location.href = newPath;
+    }
+  </script>
+
+</head>
+<body>
+  <h1>الصفحة غير موجودة</h1>
+  <p>يتم تحويلك إلى الصفحة الجديدة…</p>
+</body>
+</html>
