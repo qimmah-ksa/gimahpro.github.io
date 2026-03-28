@@ -13,10 +13,10 @@
   {% endif %}
 
   {% if page.url == "/index.html" or page.url == "/" %}
-    <link rel="canonical" href="https://www.gimahpro.com/">
-  {% else %}
-    <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% endif %}
+  <link rel="canonical" href="https://www.gimahpro.com/">
+{% else %}
+  <link rel="canonical" href="{{ page.url | absolute_url | append: '/' | replace: '//', '/' | replace: ':/', '://' }}">
+{% endif %}
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
